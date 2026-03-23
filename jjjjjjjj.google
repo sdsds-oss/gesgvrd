@@ -1,0 +1,707 @@
+! name: 日本語・信頼できる記事（全分野・大幅強化版）
+! description: 実際に検索結果を調査して品質を確認済み。個人ブログ・企業技術ブログ・公的機関・信頼できるメディアをブースト。BtoB集客コラム・AI量産記事・アフィリエイトサイトを徹底降格。技術・法律・医療・科学・料理・転職・エンタメなど全分野対応。
+! public: false
+! author: tetete
+! avatar: #2563EB
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション1: 技術記事プラットフォーム
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+$boost=3,site=zenn.dev
+/articles/$boost=3,site=zenn.dev
+/books/$boost=2,site=zenn.dev
+/topics/$downrank=1,site=zenn.dev
+
+$boost=2,site=qiita.com
+/items/$boost=3,site=qiita.com
+/tags/$downrank=1,site=qiita.com
+/organizations/$downrank=1,site=qiita.com
+
+! はてなブログ（記事ページのみブースト）
+$boost=1,site=hatenablog.com
+/entry/$boost=3,site=hatenablog.com
+$boost=1,site=hateblo.jp
+/entry/$boost=3,site=hateblo.jp
+$boost=1,site=hatenadiary.jp
+/entry/$boost=2,site=hatenadiary.jp
+$boost=1,site=hatenadiary.com
+/entry/$boost=2,site=hatenadiary.com
+$boost=1,site=hatenablog.jp
+/entry/$boost=2,site=hatenablog.jp
+
+! note: AI量産・アフィが多いため全体を軽くブーストに留め記事ページも控えめに
+$boost=1,site=note.com
+/n/$boost=1,site=note.com
+
+$boost=2,site=scrapbox.io
+$boost=2,site=speakerdeck.com
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション2: 著名エンジニア個人ブログ（実際に調査済み）
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+$boost=3,site=blog.jxck.io
+$boost=3,site=efcl.info
+$boost=3,site=azu.github.io
+$boost=3,site=blog.lacolaco.net
+$boost=2,site=hiroppy.me
+$boost=2,site=blog.uhy.ooo
+$boost=2,site=koba04.com
+$boost=3,site=yosuke-furukawa.hatenablog.com
+$boost=2,site=shu223.hatenablog.com
+$boost=2,site=cockscomb.hatenablog.com
+$boost=2,site=kishikawakatsumi.hatenablog.com
+$boost=2,site=koherent.org
+$boost=2,site=havelog.ayumusato.com
+$boost=3,site=nhiroki.jp
+$boost=3,site=r7kamura.com
+$boost=2,site=naoty.dev
+$boost=3,site=k0kubun.hatenablog.com
+$boost=3,site=ko1.hatenablog.com
+$boost=3,site=blog.ojisan.io
+/mizchi/$boost=2,site=zenn.dev
+
+$boost=3,site=lestrrat.hatenablog.com
+$boost=3,site=songmu.jp
+$boost=3,site=motemen.hatenablog.com
+$boost=2,site=tenntenn.dev
+$boost=2,site=blog.knsh14.com
+
+$boost=3,site=deeeet.com
+$boost=2,site=hfm.io
+$boost=3,site=yuuki.hatenablog.com
+$boost=3,site=hb.matsumoto-r.jp
+$boost=2,site=tatsuru.hatenablog.com
+$boost=2,site=stormcat24.hatenablog.com
+$boost=2,site=tkuchiki.hatenablog.com
+
+$boost=3,site=nmi.jp
+$boost=3,site=blog.flatt.tech
+$boost=2,site=flattsecurity.hatenablog.com
+$boost=3,site=rindolf.sakura.ne.jp
+$boost=2,site=blog.tyage.net
+$boost=2,site=diary.shift-js.info
+
+$boost=2,site=phalanx.hatenablog.com
+$boost=2,site=shi3z.hateblo.jp
+$boost=2,site=ozt.hatenablog.com
+$boost=3,site=icoxfog417.github.io
+$boost=3,site=taku910.github.io
+$boost=2,site=yoheikikuta.github.io
+$boost=2,site=classcat.com
+
+$boost=3,site=www.sigbus.info
+$boost=2,site=tanamako.hatenablog.com
+/hnw/$boost=2,site=d.hatena.ne.jp
+
+$boost=2,site=tatsuya6502.hatenablog.com
+$boost=2,site=dalance.github.io
+$boost=2,site=qnighy.hatenablog.com
+
+$boost=3,site=yoku0825.hatenablog.com
+$boost=3,site=soudai.hatenablog.com
+$boost=2,site=tom.hatenablog.com
+
+$boost=3,site=drken1215.hatenablog.com
+$boost=2,site=ei1333.hateblo.jp
+$boost=3,site=tsujimotter.hatenablog.com
+$boost=2,site=a244.hateblo.jp
+
+! Ruby・Perl・老舗ブログ
+$boost=3,site=matz.rubyist.net
+$boost=3,site=matznerd.hatenadiary.org
+$boost=3,site=blog.jnito.com
+$boost=2,site=tokuhirom.hatenadiary.org
+$boost=3,site=perl-users.jp
+$boost=2,site=blog.miyagawa.jp
+$boost=2,site=arton.hatenablog.com
+$boost=2,site=ryopeko.hatenablog.com
+$boost=3,site=blog.kazuhooku.com
+$boost=3,site=naoya.hatenadiary.org
+$boost=3,site=naoya.hatenablog.com
+$boost=3,site=masui.hatenadiary.org
+/~satoru/$boost=3,site=namazu.org
+$boost=2,site=kazupon.hatenablog.com
+$boost=2,site=kenn.typepad.com
+$boost=3,site=dan.co.jp
+/dankogai/$boost=3,site=blog.livedoor.jp
+$boost=2,site=tatenaoyuichi.hatenablog.com
+$boost=2,site=tatenaoyuichi.hatenablog.com
+$boost=2,site=s3works.hatenablog.com
+
+! ゲーム・グラフィックス・組み込み
+$boost=2,site=notargs.hateblo.jp
+$boost=3,site=keijiro.hatenablog.com
+$boost=2,site=garammasala.hatenablog.com
+$boost=3,site=garretlab.web.fc2.com
+$boost=2,site=ksasao.hatenablog.com
+$boost=2,site=kishima.hatenablog.com
+$boost=2,site=nfurjp.hatenablog.com
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション3: 国内大手・有名企業のエンジニアリングブログ
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+$boost=3,site=dev.classmethod.jp
+/articles/$boost=3,site=dev.classmethod.jp
+$boost=3,site=engineering.mercari.com
+$boost=3,site=blog.cybozu.io
+$boost=3,site=developer.hatenastaff.com
+$boost=3,site=techblog.yahoo.co.jp
+$boost=3,site=engineering.linecorp.com
+$boost=3,site=tech.pepabo.com
+$boost=3,site=techblog.zozo.com
+$boost=3,site=techblog.recruit.co.jp
+$boost=2,site=developers.cyberagent.co.jp
+$boost=3,site=inside.pixiv.blog
+$boost=2,site=engineering.dena.com
+$boost=3,site=tech.smarthr.jp
+$boost=3,site=buildersbox.corp-sansan.com
+$boost=2,site=techblog.paypay.ne.jp
+$boost=2,site=mixi-engineers.hatenablog.com
+$boost=2,site=tech.gunosy.io
+$boost=2,site=tech.hey.jp
+$boost=2,site=techblog.cartaholdings.co.jp
+$boost=2,site=tech.uzabase.com
+$boost=2,site=tech.plaid.co.jp
+$boost=2,site=blog.studysapuri.jp
+$boost=2,site=engineering.backlog.jp
+$boost=2,site=techblog.gmo.jp
+$boost=2,site=tech.andpad.co.jp
+$boost=2,site=tech.timee.co.jp
+$boost=3,site=developers.freee.co.jp
+$boost=3,site=creators.bengo4.com
+$boost=2,site=developer.smartnews.com
+/tech-blog/$boost=3,site=moneyforward.com
+$boost=2,site=creators.chatwork.com
+$boost=2,site=techblog.gaudiy.com
+$boost=2,site=tech.mntsq.co.jp
+$boost=2,site=tech.visasq.com
+$boost=2,site=tech.appbrew.io
+$boost=2,site=tech.repro.io
+$boost=3,site=www.m3tech.blog
+$boost=2,site=note.engineering
+$boost=2,site=tech.classi.jp
+$boost=2,site=blog.g-gen.co.jp
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション4: 信頼できるIT・テクノロジーメディア（調査済み）
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+$boost=2,site=gihyo.jp
+/developer/$boost=3,site=gihyo.jp
+/article/$boost=3,site=gihyo.jp
+
+$boost=2,site=atmarkit.itmedia.co.jp
+$boost=2,site=www.itmedia.co.jp
+/enterprise/$boost=2,site=www.itmedia.co.jp
+/news/$boost=2,site=www.itmedia.co.jp
+
+$boost=2,site=codezine.jp
+/article/$boost=3,site=codezine.jp
+
+! インプレス系（信頼性の高いIT・AV・PC専門メディア）
+$boost=3,site=internet.watch.impress.co.jp
+$boost=3,site=pc.watch.impress.co.jp
+$boost=3,site=av.watch.impress.co.jp
+$boost=2,site=akiba-pc.watch.impress.co.jp
+$boost=2,site=car.watch.impress.co.jp
+$boost=2,site=game.watch.impress.co.jp
+$boost=2,site=forest.watch.impress.co.jp
+$boost=2,site=dc.watch.impress.co.jp
+$boost=2,site=kaden.watch.impress.co.jp
+
+! ASCII（実績ある老舗IT・PC専門誌）
+$boost=2,site=ascii.jp
+/elem/$boost=3,site=ascii.jp
+
+! マイナビ系（一部信頼できる）
+$boost=1,site=news.mynavi.jp
+/article/$boost=1,site=news.mynavi.jp
+
+! ZDNet Japan（IT専門誌）
+$boost=2,site=japan.zdnet.com
+
+! IPA
+$boost=3,site=www.ipa.go.jp
+/security/$boost=3,site=www.ipa.go.jp
+
+$boost=2,site=akiyan.com
+$boost=2,site=coliss.com
+$boost=2,site=panda-program.com
+$boost=2,site=lean-baseball.com
+$boost=2,site=utf-8.jp
+
+! ゲーム専門メディア
+! 4Gamer（ゲーム情報の定番・内容が充実）
+$boost=3,site=www.4gamer.net
+/news/$boost=3,site=www.4gamer.net
+! ファミ通（長年の信頼）
+$boost=2,site=www.famitsu.com
+/news/$boost=2,site=www.famitsu.com
+! IGN Japan（国際メディア）
+$boost=2,site=jp.ign.com
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション5: 政府・公的機関（最高信頼性）
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+$boost=3,site=www.digital.go.jp
+$boost=3,site=www.soumu.go.jp
+$boost=3,site=www.meti.go.jp
+$boost=3,site=www.mhlw.go.jp
+$boost=3,site=www.mext.go.jp
+$boost=3,site=www.mof.go.jp
+$boost=3,site=www.mofa.go.jp
+$boost=3,site=www.cao.go.jp
+$boost=3,site=www.npa.go.jp
+$boost=3,site=www.env.go.jp
+$boost=2,site=www.maff.go.jp
+$boost=2,site=www.mlit.go.jp
+$boost=3,site=www.nta.go.jp
+$boost=3,site=www.e-tax.nta.go.jp
+$boost=3,site=www.fsa.go.jp
+$boost=2,site=www.chusho.meti.go.jp
+$boost=3,site=www.ipa.go.jp
+$boost=3,site=www.riken.jp
+$boost=3,site=www.aist.go.jp
+$boost=3,site=www.nii.ac.jp
+$boost=3,site=www.nict.go.jp
+$boost=3,site=www.jaxa.jp
+$boost=3,site=www.nies.go.jp
+$boost=3,site=www.ncvc.go.jp
+$boost=3,site=www.ncc.go.jp
+$boost=3,site=ganjoho.jp
+$boost=3,site=www.niid.go.jp
+$boost=3,site=www.ncnp.go.jp
+$boost=3,site=www.pmda.go.jp
+$boost=3,site=www.fsc.go.jp
+$boost=3,site=www.ndl.go.jp
+$boost=3,site=www.e-gov.go.jp
+$boost=3,site=elaws.e-gov.go.jp
+$boost=3,site=www.courts.go.jp
+$boost=3,site=www.stat.go.jp
+$boost=3,site=www.e-stat.go.jp
+$boost=3,site=www.boj.or.jp
+$boost=3,site=www.jstage.jst.go.jp
+$boost=3,site=ci.nii.ac.jp
+$boost=2,site=cir.nii.ac.jp
+$boost=3,site=www.jst.go.jp
+$boost=3,site=scienceportal.jst.go.jp
+$boost=2,site=www.naro.go.jp
+$boost=3,site=www.ninjal.ac.jp
+$boost=2,site=www.med.or.jp
+$boost=2,site=www.jpma.or.jp
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション6: 信頼できるニュースメディア
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+$boost=3,site=www.nhk.or.jp
+$boost=3,site=www3.nhk.or.jp
+/news/$boost=3,site=www3.nhk.or.jp
+$boost=2,site=www.nikkei.com
+/article/$boost=3,site=www.nikkei.com
+$boost=2,site=www.asahi.com
+$boost=2,site=globe.asahi.com
+$boost=2,site=mainichi.jp
+$boost=2,site=www.yomiuri.co.jp
+$boost=3,site=www.kyodonews.jp
+$boost=2,site=www.jiji.com
+$boost=2,site=jp.reuters.com
+$boost=2,site=toyokeizai.net
+/articles/$boost=2,site=toyokeizai.net
+$boost=2,site=diamond.jp
+/articles/$boost=2,site=diamond.jp
+$boost=2,site=business.nikkei.com
+/article/$boost=2,site=business.nikkei.com
+$boost=3,site=www.nikkei-science.com
+$boost=3,site=natgeo.nikkeibp.co.jp
+$boost=3,site=scienceportal.jst.go.jp
+$boost=2,site=www.astroarts.co.jp
+/news/$boost=3,site=www.astroarts.co.jp
+$boost=3,site=blog.miraikan.jst.go.jp
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション7: 料理・レシピ（調査で品質確認済み）
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! NHKきょうの料理（最高品質・長年の実績）
+$boost=3,site=www.kyounoryouri.jp
+/recipe/$boost=3,site=www.kyounoryouri.jp
+/search/$boost=3,site=www.kyounoryouri.jp
+
+! キッコーマン公式レシピ（食品メーカー・信頼性高）
+$boost=2,site=www.kikkoman.co.jp
+/homecook/$boost=3,site=www.kikkoman.co.jp
+
+! 味の素公式レシピ
+$boost=2,site=park.ajinomoto.co.jp
+$boost=2,site=ajinomoto-pal.com
+
+! 白ごはん.com（調理師・本物の専門家が書く）
+$boost=3,site=www.sirogohan.com
+
+! みんなのきょうの料理（NHKエデュケーショナル）
+$boost=3,site=www.kyounoryouri.jp
+
+! クラシル（動画レシピ・品質管理あり）
+$boost=2,site=www.kurashiru.com
+
+! デリッシュキッチン（動画レシピ・品質管理あり）
+$boost=2,site=delishkitchen.tv
+
+! クックパッド（個人投稿主体だが記事ページは玉石混淆）
+$boost=1,site=cookpad.com
+/recipe/$boost=1,site=cookpad.com
+
+! 東京ガス（料理教室100周年・専門家監修）
+/recipes/$boost=2,site=uchi.tokyo-gas.co.jp
+
+! 料理研究家個人ブログ
+$boost=2,site=www.nozomicooking.com
+$boost=2,site=www.recipe-blog.jp
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション8: 法律・税務・会計
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+$boost=3,site=elaws.e-gov.go.jp
+$boost=3,site=laws.e-gov.go.jp
+$boost=3,site=www.courts.go.jp
+$boost=3,site=www.nichibenren.or.jp
+$boost=2,site=www.bengo4.com
+/news/$boost=3,site=www.bengo4.com
+$boost=3,site=www.moj.go.jp
+$boost=3,site=www.caa.go.jp
+$boost=3,site=www.jftc.go.jp
+$boost=3,site=www.ppc.go.jp
+$boost=3,site=www.nta.go.jp
+$boost=3,site=www.e-tax.nta.go.jp
+$boost=3,site=www.fsa.go.jp
+$boost=3,site=edinet.fsa.go.jp
+
+! 弥生（会計ソフト・確定申告解説が丁寧で信頼性高）
+$boost=2,site=www.yayoi-kk.co.jp
+/shinkoku/$boost=3,site=www.yayoi-kk.co.jp
+
+! freee（クラウド会計・公式ヘルプが充実）
+$boost=2,site=support.freee.co.jp
+$boost=2,site=www.freee.co.jp
+/kb/$boost=2,site=www.freee.co.jp
+
+! マネーフォワード（制度解説）
+/money-note/$boost=2,site=moneyforward.com
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション9: 転職・キャリア（大手転職サービスのみ）
+!! ※転職エージェントの「コラム」は集客目的が多いため /column/ は除外
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! doda（パーソルキャリア・大手転職サービス・実データに基づく）
+$boost=2,site=doda.jp
+/guide/$boost=2,site=doda.jp
+/engineer/$boost=2,site=doda.jp
+
+! リクナビNEXT（リクルート・大手）
+$boost=2,site=next.rikunabi.com
+
+! リクルートダイレクトスカウト（専門性高い）
+$boost=2,site=directscout.recruit.co.jp
+/contents/$boost=2,site=directscout.recruit.co.jp
+
+! エン転職（エン・ジャパン・実績）
+$boost=2,site=employment.en-japan.com
+/tenshoku-daijiten/$boost=2,site=employment.en-japan.com
+
+! マイナビ転職（大手・信頼）
+/knowledge/$boost=1,site=mynavi-agent.jp
+
+! Wantedly（スタートアップ向け・求人情報）
+$boost=1,site=www.wantedly.com
+/companies/$boost=1,site=www.wantedly.com
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション10: 医療・健康（専門家・公的機関のみ）
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+$boost=3,site=www.mhlw.go.jp
+$boost=3,site=www.e-healthnet.mhlw.go.jp
+$boost=3,site=www.ncc.go.jp
+$boost=3,site=ganjoho.jp
+$boost=3,site=www.ncvc.go.jp
+$boost=3,site=www.niid.go.jp
+$boost=3,site=www.ncnp.go.jp
+$boost=3,site=www.med.or.jp
+$boost=3,site=www.pmda.go.jp
+$boost=3,site=www.fsc.go.jp
+$boost=2,site=www.m3.com
+$boost=2,site=medicalnote.jp
+/disease/$boost=3,site=medicalnote.jp
+$boost=2,site=www.jds.or.jp
+$boost=2,site=www.jpnsh.jp
+/kutsunasatoshi/$boost=3,site=note.com
+/byline/kutsunasatoshi/$boost=3,site=news.yahoo.co.jp
+
+! 健康商材・アフィリエイト記事を強く降格
+/supplement/$downrank=3
+/diet-method/$downrank=3
+/mukumi/$downrank=2
+/cellulite/$downrank=3
+/aojiru/$downrank=3
+/tokuyaku/$downrank=3
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション11: 科学・学術・アカデミック
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+$boost=2,site=www.ipsj.or.jp
+$boost=2,site=www.ieice.org
+$boost=3,site=www.jsai.or.jp
+$boost=2,site=www.jps.or.jp
+$boost=2,site=www.astronomy.or.jp
+$boost=3,site=moriyama.com
+$boost=3,site=planck.exblog.jp
+$boost=2,site=kikumaco.hatenablog.com
+$boost=2,site=powwow.hatenadiary.org
+$boost=2,site=www.xrd.jp
+$boost=2,site=biomedicalhacks.com
+$boost=2,site=ill-conditioned.hatenablog.com
+$boost=2,site=ushi73.hateblo.jp
+$boost=2,site=yonemoto.hatenablog.com
+$boost=2,site=genkuroki.hatenablog.com
+$boost=2,site=mathtrain.jp
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション12: 人文・哲学・経済・社会科学
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+$boost=3,site=blog.tatsuru.com
+/archives/$boost=3,site=blog.tatsuru.com
+$boost=3,site=cruel.org
+/yamamomo/$boost=3,site=d.hatena.ne.jp
+$boost=3,site=matsuo.hatenablog.jp
+$boost=3,site=himaginary.hatenablog.com
+/himaginary/$boost=2,site=d.hatena.ne.jp
+$boost=3,site=ohyaurao.hatenadiary.jp
+$boost=3,site=finalvent.hatenadiary.jp
+$boost=2,site=simodat.hatenablog.com
+$boost=2,site=yamaguchijiro.hatenablog.com
+$boost=2,site=noguchi.hatenablog.com
+$boost=2,site=ikedanobuo.livedoor.biz
+$boost=2,site=tomarino.hatenablog.com
+$boost=2,site=sekaihaasobiba.hatenadiary.com
+$boost=2,site=kamikaminews.com
+
+$boost=2,site=www.iwanami.co.jp
+$boost=2,site=www.chikumashobo.co.jp
+$boost=3,site=www.ndl.go.jp
+$boost=2,site=dl.ndl.go.jp
+$boost=2,site=www.utp.or.jp
+$boost=2,site=www.rekihaku.ac.jp
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション13: 書評・読書・語学・文芸
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+$boost=3,site=1000ya.isis.ne.jp
+$boost=3,site=readingmonkey.blog.fc2.com
+$boost=3,site=readingmonkey.blog.jp
+$boost=2,site=book.asahi.com
+/review/$boost=2,site=book.asahi.com
+$boost=3,site=iima.hatenablog.com
+$boost=2,site=www.alc.co.jp
+/column/$boost=2,site=www.alc.co.jp
+$boost=2,site=eow.alc.co.jp
+$boost=2,site=y-hase.hatenablog.com
+$boost=2,site=watanabe.hatenablog.com
+$boost=2,site=dictionary.sanseido-publ.co.jp
+$boost=3,site=kotobank.jp
+$boost=2,site=dictionary.goo.ne.jp
+$boost=3,site=www.ninjal.ac.jp
+$boost=2,site=csd.ninjal.ac.jp
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション14: デザイン・アクセシビリティ・UX
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+$boost=3,site=r.lde.jp
+$boost=3,site=masafumi.tumblr.com
+$boost=2,site=accessible-usable.net
+$boost=2,site=uxmilk.jp
+/article/$boost=2,site=uxmilk.jp
+$boost=2,site=bagelee.com
+$boost=2,site=wdg.hatenablog.com
+$boost=2,site=bijutsutecho.com
+/magazine/$boost=2,site=bijutsutecho.com
+$boost=2,site=artscape.jp
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション15: Zenn・Qiita 高品質著者
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+/jxck/$boost=3,site=zenn.dev
+/azu/$boost=3,site=zenn.dev
+/uhyo/$boost=3,site=zenn.dev
+/yoheikikuta/$boost=2,site=zenn.dev
+/tmokmss/$boost=2,site=zenn.dev
+/catnose/$boost=2,site=zenn.dev
+/terrierscript/$boost=2,site=zenn.dev
+/morinokami/$boost=2,site=zenn.dev
+/ryo_kawamata/$boost=2,site=zenn.dev
+/abekoh/$boost=2,site=zenn.dev
+/yohhoy/$boost=2,site=zenn.dev
+/tanaken0213/$boost=2,site=zenn.dev
+
+/zaru/$boost=2,site=qiita.com
+/ryo_grid/$boost=2,site=qiita.com
+/t_katsumura/$boost=2,site=qiita.com
+/koher/$boost=2,site=qiita.com
+/Yametaro/$boost=2,site=qiita.com
+/jabba/$boost=2,site=qiita.com
+/yohhoy/$boost=2,site=qiita.com
+/Nabetani/$boost=2,site=qiita.com
+/prograti/$boost=2,site=qiita.com
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション16: URLパターン別ブースト
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+/entry/*/$boost=2,site=hatenablog.com
+/entry/*/$boost=2,site=hateblo.jp
+/entry/*/$boost=2,site=hatenadiary.jp
+/entry/*/$boost=2,site=hatenadiary.com
+/articles/*/$boost=3,site=zenn.dev
+/items/*/$boost=3,site=qiita.com
+/n/*/$boost=1,site=note.com
+/blog/*/$boost=1
+/posts/*/$boost=1
+
+$boost=3,site=jxck.github.io
+$boost=3,site=azu.github.io
+$boost=2,site=icoxfog417.github.io
+$boost=2,site=taku910.github.io
+$boost=2,site=dalance.github.io
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション17: 完全除外（$discard）
+!! 実際に検索して確認した質の悪いアフィ・BtoB集客サイト
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! --- 検索で直接確認した悪質サイト ---
+! Bluesky検索で出てきたSNS運用会社SEOコラム
+$discard,site=comnico.jp
+$discard,site=ownly.jp
+$discard,site=eltes-solution.jp
+$discard,site=unique1.co.jp
+! 広告代理店のSEOコラム
+$discard,site=infinity-agent.co.jp
+! マーケティング会社のブログ（Bluesky検索で確認）
+$discard,site=anagrams.jp
+! 起業支援コンテンツメディア（確定申告検索でも出現）
+$discard,site=sogyotecho.jp
+! SNS計測・メディア系コラム
+$discard,site=media-radar.jp
+! Web制作会社のSEOコラム
+$discard,site=sungrove.co.jp
+
+! --- SNSマーケティング・BtoB集客サイト群 ---
+$discard,site=smmlab.jp
+$discard,site=gaiax-socialmedialab.jp
+$discard,site=sns-hacks.com
+$discard,site=thesocial.media
+$discard,site=social100.com
+$discard,site=sns-matome.com
+$discard,site=liskul.com
+$discard,site=bocek.jp
+$discard,site=marketing-campus.jp
+$discard,site=bazubu.com
+$discard,site=swingroot.com
+$discard,site=shareage.jp
+$discard,site=contentmarketinglabo.jp
+$discard,site=satori.marketing
+$discard,site=ferret-plus.com
+
+! --- プログラミングスクール集客ブログ ---
+$discard,site=www.sejuku.net
+$discard,site=tech-camp.in
+$discard,site=runteq.jp
+$discard,site=web-camp.io
+$discard,site=kikagaku.co.jp
+$discard,site=datamix.co.jp
+
+! --- まとめ・キュレーションサイト ---
+$discard,site=matome.naver.jp
+$discard,site=storys.jp
+
+! --- 転職エージェントのコンテンツ系（BtoB集客目的）---
+! ※ neo-career.co.jp は転職エージェントのコラムサイト
+$discard,site=www.neo-career.co.jp
+
+! --- SEO量産・アフィリエイトまとめサイト ---
+$discard,site=nandemo-answer.com
+$discard,site=appli-world.jp
+$discard,site=rankingplanet.jp
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション18: 降格（$downrank）
+!! 質が低いが完全除外は行き過ぎなサイト
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+$downrank=3,site=togetter.com
+/jp/$downrank=3,site=buzzfeed.com
+$downrank=3,site=rank.ne.jp
+$downrank=2,site=best5.jp
+$downrank=2,site=ranking.goo.ne.jp
+$downrank=2,site=smartnews.com
+$downrank=2,site=newsdigest.jp
+$downrank=3,site=antenna.jp
+$downrank=2,site=gunosy.com
+/newsdig/$downrank=2,site=tbs.co.jp
+$downrank=1,site=ja.wikipedia.org
+/fxsig/$downrank=2
+/fx-beginners/$downrank=2
+/fx-matome/$downrank=2
+
+! 企業採用・リクルートページ
+/recruit/$downrank=2
+/jobs/$downrank=2
+/careers/$downrank=2
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション19: URLパターンによるSEOスパム降格
+!! 実際の検索で確認した悪質パターン
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! /column/ は BtoB集客コラムで多用される（個別サイトはブーストで相殺）
+/column/$downrank=1
+
+! /media/ も同様（ただし各種メディアは個別ブーストで相殺）
+/media/$downrank=1
+
+! SNSコラムに特有のパス
+/sslab/$downrank=3
+/we-love-social/$downrank=3
+/digitalrisk/$downrank=3
+
+! SEO量産ランキング記事
+/osusume-ranking/$downrank=2
+/best-ranking/$downrank=2
+/hikaku-matome/$downrank=3
+/ranking/$downrank=3
+/osusume/$downrank=2
+/hikaku/$downrank=2
+/matome/$downrank=2
+
+! ページネーション（引き伸ばし記事対策）
+/page/2/$downrank=1
+/page/3/$downrank=2
+/page/4/$downrank=3
+
+! アフィリエイト健康商材
+/supplement/$downrank=3
+/diet-method/$downrank=3
+/mukumi/$downrank=2
+/cellulite/$downrank=3
+/aojiru/$downrank=3
