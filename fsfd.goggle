@@ -767,7 +767,7 @@ $boost=1,site=hatenadiary.com
 $boost=1,site=hatenablog.jp
 /entry/$boost=2,site=hatenablog.jp
 
-$boost=3, site=reddit.com
+$boost=3,site=reddit.com
 
 ! note: AI量産・アフィ混入多数のため全体ブースト控えめ
 $boost=1,site=note.com
