@@ -1,0 +1,696 @@
+! name: 日本語・信頼できる個人記事ブログ
+! description: 日本語の信頼できる個人ブログ・専門家記事を優先表示し、SEO量産・まとめサイト・アフィリエイト過多なサイトを降格するGoggle。技術・科学・人文・エッセイなど幅広いカテゴリに対応。
+! public: false
+! avatar: #3B82F6
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション1: 技術記事プラットフォーム（高品質・個人著者）
+!! Zenn・Qiita・はてなブログ の個人記事を強くブースト
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! --- Zenn（エンジニア向け高品質プラットフォーム）---
+$boost=3,site=zenn.dev
+/articles/$boost=3,site=zenn.dev
+/books/$boost=2,site=zenn.dev
+! Zennのトップページ・タグ一覧などは不要なのでやや降格
+/topics$downrank=1,site=zenn.dev
+/users$downrank=1,site=zenn.dev
+
+! --- Qiita（日本最大のエンジニア情報共有）---
+$boost=2,site=qiita.com
+/items/$boost=3,site=qiita.com
+! Qiitaのランキング・タグページは個人記事より優先度低め
+/tags/$downrank=1,site=qiita.com
+/organizations/$downrank=1,site=qiita.com
+
+! --- はてなブログ（個人ブログの中心地）---
+! hatenablog.com（無料プラン）
+$boost=2,site=hatenablog.com
+/entry/$boost=3,site=hatenablog.com
+! hateblo.jp
+$boost=2,site=hateblo.jp
+/entry/$boost=3,site=hateblo.jp
+! hatenadiary.jp（旧はてなダイアリー）
+$boost=2,site=hatenadiary.jp
+/entry/$boost=2,site=hatenadiary.jp
+! hatenadiary.com
+$boost=2,site=hatenadiary.com
+/entry/$boost=2,site=hatenadiary.com
+
+! --- note（エッセイ・専門知識の発信）---
+$boost=2,site=note.com
+/n/$boost=3,site=note.com
+! noteのマガジン一覧・タグページは記事より優先度低め
+/m/$downrank=1,site=note.com
+/hashtag/$downrank=1,site=note.com
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション2: 著名技術者・エンジニアの個人ドメインブログ
+!! 実名・ハンドル名で活動する信頼できる個人ブログ
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! --- Web標準・JavaScript・フロントエンド ---
+! Jxck（Web標準の専門家、HTTP/TLS/WebRTC等）
+$boost=3,site=blog.jxck.io
+! azu（JavaScript/フロントエンド、textlintなど著名OSSコントリビュータ）
+$boost=3,site=efcl.info
+$boost=3,site=azu.github.io
+! lacolaco（Angular専門家、Googleデベロッパーエキスパート）
+$boost=3,site=blog.lacolaco.net
+! hiroppy（webpack/Node.jsコントリビュータ）
+$boost=2,site=hiroppy.me
+! uhyo（TypeScript専門家）
+$boost=2,site=blog.uhy.ooo
+! koba04（React/フロントエンド）
+$boost=2,site=koba04.com
+! mizchi（パフォーマンス・フロントエンド）
+$boost=2,site=zenn.dev/mizchi
+! yosuke_furukawa（Node.jsコントリビュータ、日本Node.jsユーザーグループ）
+$boost=3,site=yosuke-furukawa.hatenablog.com
+! shu223（iOSエンジニア・Metal専門家）
+$boost=2,site=shu223.hatenablog.com
+! cockscomb（iOSエンジニア）
+$boost=2,site=cockscomb.hatenablog.com
+! kishikawakatsumi（Swift/Xcode専門家）
+$boost=2,site=kishikawakatsumi.hatenablog.com
+! koher（Swift/関数型プログラミング）
+$boost=2,site=koherent.org
+
+! --- Go言語・バックエンド ---
+! lestrrat（Go言語コントリビュータ）
+$boost=3,site=lestrrat.hatenablog.com
+! songmu（Go言語、はてな出身）
+$boost=3,site=songmu.jp
+! motemen（Go言語、はてな出身）
+$boost=3,site=motemen.hatenablog.com
+! tenntenn（Go言語、Goコントリビュータ）
+$boost=2,site=tenntenn.dev
+! knsh14（Goエンジニア）
+$boost=2,site=blog.knsh14.com
+
+! --- インフラ・DevOps・SRE ---
+! deeeet（コンテナ・クラウドネイティブ専門家）
+$boost=3,site=deeeet.com
+! hfm（インフラ・SRE）
+$boost=2,site=hfm.io
+! yuuk1t（SRE・モニタリング）
+$boost=3,site=yuuki.hatenablog.com
+! matsumoto_r（nginx/サーバー管理の専門家）
+$boost=3,site=hb.matsumoto-r.jp
+! tatsuru（AWSインフラ）
+$boost=2,site=tatsuru.hatenablog.com
+! stormcat24（Kubernetes/クラウドネイティブ）
+$boost=2,site=stormcat24.hatenablog.com
+
+! --- セキュリティ ---
+! okuoku（セキュリティ研究者）
+$boost=3,site=rindolf.sakura.ne.jp
+! tyage（Webセキュリティ）
+$boost=2,site=blog.tyage.net
+! Mitsui Ryosuke / nishimura_yuki系セキュリティ
+$boost=2,site=diary.shift-js.info
+
+! --- 機械学習・AI・データサイエンス ---
+! phalanx（機械学習）
+$boost=2,site=phalanx.hatenablog.com
+! shi3z（AI・機械学習、著名テック評論家）
+$boost=2,site=shi3z.hateblo.jp
+! ozt_jp（データサイエンス）
+$boost=2,site=ozt.hatenablog.com
+! icoxfog417（機械学習・NLP）
+$boost=3,site=icoxfog417.github.io
+! taku910（形態素解析、MeCab開発者）
+$boost=3,site=taku910.github.io
+
+! --- コンパイラ・低レイヤー・OS ---
+! rui314（chibicc作者、C言語コンパイラ）
+$boost=3,site=www.sigbus.info
+! tanamako（システムプログラミング）
+$boost=2,site=tanamako.hatenablog.com
+! hnw（PHP内部・低レイヤー）
+$boost=2,site=d.hatena.ne.jp/hnw
+
+! --- Rust ---
+! tatsuya6502（Rustエンジニア）
+$boost=2,site=tatsuya6502.hatenablog.com
+! dalance（Rust専門家、svlsなどOSS開発）
+$boost=2,site=dalance.github.io
+
+! --- データベース・ストレージ ---
+! yoku0825（MySQLエンジニア）
+$boost=3,site=yoku0825.hatenablog.com
+! soudai（RDBMSの専門家）
+$boost=3,site=soudai.hatenablog.com
+! tom__bo（MySQLパフォーマンス）
+$boost=2,site=tom.hatenablog.com
+
+! --- 数学・アルゴリズム・競技プログラミング ---
+! drken1215（AtCoder社員・競プロ）
+$boost=3,site=drken1215.hatenablog.com
+! ei1333（競技プログラミング）
+$boost=2,site=ei1333.hateblo.jp
+! qnighy（Rust・理論計算機科学）
+$boost=2,site=qnighy.hatenablog.com
+! tsujimotter（数論・数学）
+$boost=3,site=tsujimotter.hatenablog.com
+! a244（数学・機械学習の理論）
+$boost=2,site=a244.hateblo.jp
+
+! --- クラウド・AWS・GCP ---
+! s3works（AWSインフラ）
+$boost=2,site=s3works.hatenablog.com
+! katsuhisa_（GCPエンジニア）
+$boost=2,site=medium.com/@katsuhisa__
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション3: 信頼できる日本語技術メディア（個人・少人数運営）
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! DevelopersIO（クラスメソッド社・圧倒的な情報量と品質）
+$boost=3,site=dev.classmethod.jp
+/articles/$boost=3,site=dev.classmethod.jp
+
+! Gihyo.jp（技術評論社・出版社系の信頼できる技術メディア）
+$boost=2,site=gihyo.jp
+/book/$boost=1,site=gihyo.jp
+/developer/$boost=3,site=gihyo.jp
+/article/$boost=3,site=gihyo.jp
+
+! Software Design（技術評論社オンライン）
+$boost=2,site=atmarkit.itmedia.co.jp
+
+! IPA（情報処理推進機構・公的機関の技術情報）
+$boost=2,site=www.ipa.go.jp
+/security/$boost=3,site=www.ipa.go.jp
+/files/$boost=2,site=www.ipa.go.jp
+
+! Akiyan.com（Web技術・プログラミング専門の老舗個人ブログ）
+$boost=2,site=akiyan.com
+
+! あしたのチーム（エンジニアリングマネジメント）
+$boost=2,site=note.com/ashitatoチーム
+
+! Smashing Magazine日本語版相当のデザイン系記事
+$boost=2,site=coliss.com
+
+! Web Design Garage（デザイン・CSS情報）
+$boost=2,site=wdg.hatenablog.com
+
+! わかばちゃんと学ぶシリーズ（湊川あい氏・マンガ形式で分かりやすい技術解説）
+$boost=2,site=llminatoll.hatenablog.com
+
+! panda_program（エンジニアリング全般・学習記録）
+$boost=2,site=panda-program.com
+
+! Lean Baseball（中川伸一氏・エンジニアリング＆マネジメント）
+$boost=2,site=lean-baseball.com
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション4: 科学・アカデミック系個人ブログ
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! 日本科学未来館 科学コミュニケーターブログ（科学情報の一次発信）
+$boost=3,site=blog.miraikan.jst.go.jp
+
+! STAP細胞問題など科学誠実性で知られる瀬川深氏のブログ
+$boost=2,site=sekaihaasobiba.hatenadiary.com
+
+! 生命科学・バイオインフォマティクス
+$boost=2,site=biomedicalhacks.com
+
+! 粉末X線回折・結晶学（高品質な専門ブログ）
+$boost=2,site=www.xrd.jp
+
+! 統計・データ解析
+! Ill-Conditioned（統計・数理専門の個人ブログ）
+$boost=2,site=ill-conditioned.hatenablog.com
+! 統計的なおはなし
+$boost=2,site=ushi73.hateblo.jp
+! id:yonemoto（Bayesian統計）
+$boost=2,site=yonemoto.hatenablog.com
+
+! 天文学・宇宙科学関係
+$boost=2,site=www.astroarts.co.jp
+/news/$boost=3,site=www.astroarts.co.jp
+
+! 物理学・量子力学関連の信頼できる記事
+$boost=2,site=www.phys.sci.osaka-u.ac.jp
+
+! 数学・証明・解説（大学教員・研究者レベル）
+! tsujimotter.hatenablog.com（前掲）
+! 竹山美宏氏の数学記事
+$boost=2,site=mathtrain.jp
+
+! 科学ライター・出版社の個人ブログ
+! 森山和道氏（科学ジャーナリスト）
+$boost=3,site=moriyama.com
+! 大栗博司氏（カリフォルニア工科大学物理学教授・ブログ）
+$boost=3,site=planck.exblog.jp
+! 菊池誠氏（物理学者・ニセ科学批判）
+$boost=2,site=kikumaco.hatenablog.com
+! 粉川哲夫氏（思想・文化論）
+$boost=2,site=powwow.hatenadiary.org
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション5: 人文・社会科学・評論系の信頼できる個人ブログ
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! 内田樹氏（哲学者・思想家）
+$boost=3,site=blog.tatsuru.com
+/archives/$boost=3,site=blog.tatsuru.com
+
+! 山形浩生氏（経済・翻訳・評論）
+$boost=3,site=d.hatena.ne.jp/yamamomo
+$boost=3,site=cruel.org
+
+! 松尾匡氏（経済学）
+$boost=3,site=matsuo.hatenablog.jp
+
+! 経済学・マクロ政策
+! 田中秀臣氏（経済学者）
+$boost=2,site=d.hatena.ne.jp/himaginary
+! himaginaryの日記（経済学ブログ）
+$boost=3,site=himaginary.hatenablog.com
+
+! 法律・法学・法哲学
+! 大屋雄裕氏（法哲学者）
+$boost=3,site=ohyaurao.hatenadiary.jp
+
+! 文化・社会論
+! finalvent（田島浩一郎氏・思索・読書・社会批評）
+$boost=3,site=finalvent.hatenadiary.jp
+
+! 下田健太郎氏（翻訳・語学）
+$boost=2,site=simodat.hatenablog.com
+
+! 中東・イスラム研究
+$boost=2,site=yamaguchijiro.hatenablog.com
+
+! 医療・公衆衛生（エビデンスベース）
+! 上昌広氏（医療政策）
+$boost=2,site=kamikaminews.com
+! 国立感染症研究所（一次情報）
+$boost=3,site=www.niid.go.jp
+! 忽那賢志氏（感染症専門医・note）
+$boost=3,site=note.com/kutsunasatoshi
+
+! 心理学・認知科学
+! 黒木玄氏（統計・ニセ科学批判）
+$boost=2,site=genkuroki.hatenablog.com
+$boost=2,site=twitter.com/genkuroki
+
+! 教育論・学習科学
+! 苫野一徳氏（教育哲学者）
+$boost=2,site=tomarino.hatenablog.com
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション6: 書評・読書・文芸系の信頼できる個人ブログ
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! 書評・書物に関する高品質個人ブログ
+$boost=2,site=book.asahi.com
+/review/$boost=2,site=book.asahi.com
+
+! 三省堂ワードワイズ・ウェブ（語彙・言語）
+$boost=2,site=dictionary.sanseido-publ.co.jp
+/wp/$boost=2,site=dictionary.sanseido-publ.co.jp
+
+! ほんのひとこと（読書記録・書評ブログ）
+$boost=2,site=hontobase.jp
+
+! 松岡正剛氏「千夜千冊」（唯一無二の書評サイト）
+$boost=3,site=1000ya.isis.ne.jp
+
+! 読書猿（知識・学習方法・書評）
+$boost=3,site=readingmonkey.blog.fc2.com
+$boost=3,site=readingmonkey.blog.jp
+
+! 私のはてなブログ（書評・読書メモ）
+/entry/$boost=1,site=hatenablog.com
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション7: Zenn・Qiita・note の高品質著者（個人ユーザー記事）
+!! これらのプラットフォーム上の特定著者URLをブースト
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! Zenn上の著名エンジニア（個人ページ）
+$boost=3,site=zenn.dev/jxck
+$boost=3,site=zenn.dev/azu
+$boost=3,site=zenn.dev/uhyo
+$boost=2,site=zenn.dev/yoheikikuta
+$boost=2,site=zenn.dev/tmokmss
+$boost=2,site=zenn.dev/catnose
+$boost=2,site=zenn.dev/otofu_square
+$boost=2,site=zenn.dev/terrierscript
+$boost=2,site=zenn.dev/morinokami
+$boost=2,site=zenn.dev/offers_tech
+$boost=2,site=zenn.dev/ryo_kawamata
+$boost=2,site=zenn.dev/abekoh
+
+! Qiita上の高品質著者（いいね数が多く信頼性が高い）
+$boost=2,site=qiita.com/zaru
+$boost=2,site=qiita.com/ryo_grid
+$boost=2,site=qiita.com/t_katsumura
+$boost=2,site=qiita.com/koher
+$boost=2,site=qiita.com/Yametaro
+$boost=2,site=qiita.com/jabba
+$boost=2,site=qiita.com/yohhoy
+$boost=2,site=qiita.com/edy
+$boost=2,site=qiita.com/Nabetani
+$boost=2,site=qiita.com/MikamiNaoto
+$boost=2,site=qiita.com/prograti
+$boost=2,site=qiita.com/tanuki_phoenix
+
+! note上の信頼できる著者
+$boost=3,site=note.com/kutsunasatoshi
+$boost=2,site=note.com/tomomina
+$boost=2,site=note.com/taichi_makino
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション8: GitHub Pages / 個人ドメインの技術記事
+!! エンジニアが自前ドメインで発信している高品質ブログ
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! GitHub Pages（個人の技術ブログ）
+! github.io 配下の個人ページ全般を軽くブースト
+/posts/$boost=2,site=github.io
+/blog/$boost=2,site=github.io
+
+! 以下は実績のある個人エンジニアのgithub.io
+$boost=3,site=jxck.github.io
+$boost=3,site=azu.github.io
+$boost=2,site=yusukebe.github.io
+
+! 自前WordPressやその他個人ドメインの技術ブログ
+$boost=2,site=blog.jxck.io
+$boost=2,site=deeeet.com
+$boost=2,site=moriyama.com
+$boost=2,site=hyoshida.hatenadiary.jp
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション9: 学術・大学・研究機関の公式ブログ・コラム
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! 理化学研究所
+$boost=2,site=www.riken.jp
+/news/$boost=3,site=www.riken.jp
+/research/$boost=3,site=www.riken.jp
+
+! 産業技術総合研究所（AIST）
+$boost=2,site=www.aist.go.jp
+
+! 国立情報学研究所（NII）
+$boost=2,site=www.nii.ac.jp
+
+! 情報処理学会
+$boost=2,site=www.ipsj.or.jp
+
+! JST（科学技術振興機構）
+$boost=2,site=www.jst.go.jp
+
+! 電子情報通信学会
+$boost=2,site=www.ieice.org
+
+! 科学技術情報発信・流通総合システム（J-STAGE・査読付き論文・最高信頼性）
+$boost=3,site=www.jstage.jst.go.jp
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション10: コンテンツパターン別ブースト
+!! 個人が書いた記事らしいURLパターンをブースト
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! はてなブログの記事ページ（/entry/ がつく）
+/entry/*/$boost=2,site=hatenablog.com
+/entry/*/$boost=2,site=hateblo.jp
+/entry/*/$boost=2,site=hatenadiary.jp
+/entry/*/$boost=2,site=hatenadiary.com
+
+! Zennの記事ページ
+/articles/*/$boost=3,site=zenn.dev
+
+! Qiitaの記事ページ
+/items/*/$boost=3,site=qiita.com
+
+! noteの記事ページ
+/n/*/$boost=2,site=note.com
+
+! 個人WordPressブログによく見られるパターン
+/blog/*/,$boost=1
+/posts/*/,$boost=1
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション11: 降格・除外対象
+!! SEO量産・コピーコンテンツ・アフィリエイト過多サイト
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! --- まとめ・キュレーションサイト（オリジナルコンテンツが薄い）---
+$downrank=3,site=matome.naver.jp
+$downrank=3,site=togetter.com
+$downrank=3,site=storys.jp
+$downrank=3,site=buzzfeed.com/jp
+! NAVERまとめは閉鎖済みだが念のため
+$discard,site=matome.naver.jp
+
+! --- ランキング・SEO量産系サイト ---
+$downrank=3,site=rank.ne.jp
+$downrank=2,site=best5.jp
+$downrank=2,site=ranking.goo.ne.jp
+
+! --- アフィリエイト量産・薄いコンテンツのSEOサイト ---
+! 「〇〇おすすめランキング」「〇〇比較まとめ」系の薄いページ
+/ranking/$downrank=3
+/osusume/$downrank=2
+/hikaku/$downrank=2
+/matome/$downrank=2
+/best*/$downrank=1
+
+! --- コピーサイト・翻訳量産（英語記事の低品質和訳）---
+$downrank=3,site=codezine.dev
+! 注意: CodeZine本体は信頼できる
+$boost=1,site=codezine.jp
+/article/$boost=2,site=codezine.jp
+
+! --- 過剰広告・低品質ニュースアグリゲーター ---
+$downrank=2,site=smartnews.com
+$downrank=2,site=newsdigest.jp
+! ただしSmartNewsの個別記事は元サイトを参照するため問題なし
+
+! --- 転職・プログラミングスクール集客目的のブログ記事（薄いコンテンツ）---
+! 侍エンジニア（記事がスクール誘導中心）
+$downrank=2,site=www.sejuku.net
+/blog/$downrank=2,site=www.sejuku.net
+! テックキャンプ
+$downrank=2,site=tech-camp.in
+/media/$downrank=2,site=tech-camp.in
+! RUNTEQ等
+$downrank=1,site=runteq.jp
+
+! --- Wikipedia（個人記事ではないのでやや降格）---
+$downrank=1,site=ja.wikipedia.org
+
+! --- 企業公式ページ・採用ページ（個人記事と無関係）---
+/recruit/$downrank=2
+/jobs/$downrank=2
+/careers/$downrank=2
+/採用/$downrank=2
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション12: 長期実績のある個人技術ブログ（追加）
+!! 長年にわたって更新されている信頼度の高いブログ
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! 小飼弾氏（404 Blog Not Found・Perl・プログラミング哲学）
+$boost=3,site=blog.livedoor.jp/dankogai
+$boost=3,site=dan.co.jp
+
+! 江島健太郎氏（テクノロジー・シリコンバレー）
+$boost=2,site=kenn.typepad.com
+
+! 奥一穂氏（H2O HTTPサーバー作者・Webサーバー技術）
+$boost=3,site=blog.kazuhooku.com
+
+! 宮川達彦氏（Perl・PSGI/Plack）
+$boost=3,site=perl-users.jp
+$boost=2,site=blog.miyagawa.jp
+
+! tokuhirom（Perl・Java・各種OSS）
+$boost=2,site=tokuhirom.hatenadiary.org
+
+! kazupon（Vue.js・日本語ドキュメント貢献）
+$boost=2,site=kazupon.hatenablog.com
+
+! 増井俊之氏（UI研究者・入力メソッド）
+$boost=3,site=masui.hatenadiary.org
+
+! まつもとゆきひろ氏（Matz・Ruby作者）
+$boost=3,site=matz.rubyist.net
+$boost=3,site=matznerd.hatenadiary.org
+
+! Yotaro Ikeda（クリエイティブテック）
+$boost=2,site=blog.yoichiro.eu
+
+! 高林哲氏（Namazu作者・情報検索）
+$boost=3,site=namazu.org/~satoru
+
+! arton氏（Ruby・.NET・Rubyist）
+$boost=2,site=arton.hatenablog.com
+
+! id:naoya（伊藤直也氏・はてな共同創業者・ソフトウェア設計）
+$boost=3,site=naoya.hatenadiary.org
+$boost=3,site=naoya.hatenablog.com
+
+! jnito（有名Rubyエンジニア・プログラミング教育）
+$boost=3,site=blog.jnito.com
+
+! 舘野祐一氏（Elasticsearch・検索エンジン）
+$boost=2,site=tatenaoyuichi.hatenablog.com
+
+! ryopeko（Perl・Go・プログラミング一般）
+$boost=2,site=ryopeko.hatenablog.com
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション13: ゲーム開発・グラフィックス・組み込みの個人ブログ
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! ゲーム開発・グラフィックス
+! notargs（Unreal Engine / Unity）
+$boost=2,site=notargs.hateblo.jp
+! keijiro（Unity公式テックアーティスト）
+$boost=3,site=keijiro.hatenablog.com
+! garammasala（シェーダー・グラフィックス）
+$boost=2,site=garammasala.hatenablog.com
+
+! 組み込み・ハードウェア・IoT
+! garretlab（Arduinoの深い解説）
+$boost=3,site=garretlab.web.fc2.com
+! ksasao（IoT・電子工作）
+$boost=2,site=ksasao.hatenablog.com
+! kishima（組み込み・Wasm）
+$boost=2,site=kishima.hatenablog.com
+
+! FPGA・デジタル回路
+! nfurjp（FPGA）
+$boost=2,site=nfurjp.hatenablog.com
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション14: 語学・翻訳・言語学系の信頼できるブログ
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! 言語学・日本語研究
+! 飯間浩明氏（三省堂国語辞典編纂者・語彙研究）
+$boost=3,site=iima.hatenablog.com
+! 国立国語研究所
+$boost=3,site=www.ninjal.ac.jp
+
+! 英語・英語教育
+! Yasuhisa Hasegawa（言語学）
+$boost=2,site=y-hase.hatenablog.com
+! LL教材・English Journal系
+$boost=2,site=www.alc.co.jp
+/column/$boost=2,site=www.alc.co.jp
+
+! 翻訳・通訳
+! 渡辺政隆氏（サイエンスライター・翻訳）
+$boost=2,site=watanabe.hatenablog.com
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション15: 経済・金融・ビジネス系個人ブログ（玉石混淆注意）
+!! 学術的・分析的なものに限りブースト
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! 経済分析系の信頼できる個人ブログ
+! himaginary（経済学翻訳・解説）
+$boost=3,site=himaginary.hatenablog.com
+! 池田信夫氏（アゴラ・経済評論）
+$boost=2,site=ikedanobuo.livedoor.biz
+! 野口旭氏（経済学）
+$boost=2,site=noguchi.hatenablog.com
+
+! 企業分析・投資（玉石混淆なので慎重にブースト）
+! 長期投資家の詳細分析記事のみ軽くブースト
+/entry/*/$boost=1,site=hatenablog.com
+! アフィリエイト投資ブログは降格
+/fxsig/$downrank=2
+/fx-beginners/$downrank=2
+/kabu*/$downrank=1
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション16: アクセシビリティ・UX・デザイン系
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! アクセシビリティ
+! rad（アクセシビリティ専門家）
+$boost=3,site=r.lde.jp
+! 中根雅文氏（WAI-ARIA・スクリーンリーダー）
+$boost=3,site=masafumi.tumblr.com
+! Accessible & Usable
+$boost=2,site=accessible-usable.net
+
+! UXデザイン
+! UX MILK
+$boost=2,site=uxmilk.jp
+/article/$boost=2,site=uxmilk.jp
+
+! デザイン・CSS
+! bagelee（CSSアニメーション）
+$boost=2,site=bagelee.com
+! ahomu（フロントエンド・CSS設計）
+$boost=2,site=havelog.ayumusato.com
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション17: 医療・健康情報（信頼性特に重視）
+!! 一次情報・専門家発信に限りブースト、健康商材記事は強く降格
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! 国立がん研究センター
+$boost=3,site=www.ncc.go.jp
+$boost=3,site=ganjoho.jp
+
+! 国立循環器病研究センター
+$boost=3,site=www.ncvc.go.jp
+
+! 厚生労働省
+$boost=3,site=www.mhlw.go.jp
+
+! 専門医による発信
+! 忽那賢志氏（感染症・Yahoo!個人でも執筆）
+$boost=3,site=news.yahoo.co.jp/byline/kutsunasatoshi
+$boost=3,site=note.com/kutsunasatoshi
+
+! 健康商材・サプリアフィリエイト記事を強く降格
+/supplement/$downrank=3
+/サプリ/$downrank=3
+/健康食品/$downrank=2
+/diet-method/$downrank=3
+/mukumi/$downrank=2
+/tokuhо/$downrank=3
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! セクション18: パターンマッチによるSEOスパム降格
+!! 個人記事ではなく量産コンテンツのパターンを降格
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! 「〇〇とは」系の定義説明量産記事（薄い内容が多い）
+/とは/$downrank=1
+/nante/$downrank=1
+
+! 「おすすめ〇〇選」系のランキング量産記事
+/osusume*sen/$downrank=2
+/ranking*matome/$downrank=3
+
+! 検索ボリューム狙いの薄い記事パターン（「〜の方法」「〜のやり方」）
+! ※すべてではないので軽めの降格に留める
+/yarikato/$downrank=1
+/houhou/$downrank=1
+
+! ページネーションの2ページ目以降は降格（SEO目的で引き伸ばされた記事）
+/page/2/$downrank=1
+/page/3/$downrank=2
+/page/4/$downrank=3
+/?page=2$downrank=1
+/?page=3$downrank=2
+
+! 広告だらけのニュースアグリゲーター
+$downrank=3,site=antenna.jp
+$downrank=2,site=gunosy.com
+$downrank=2,site=tbs.co.jp/newsdig
