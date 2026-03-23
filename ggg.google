@@ -214,10 +214,10 @@ $boost=2,site=www.kirin.co.jp
 $boost=2,site=www.asahibeer.co.jp
 
 ! --- 農業・食育・産地情報 ---
-\$boost=1.*site=.*.go.jp
-/syokuiku/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.maff.go.jp
+/syokuiku/$boost=3,site=www.maff.go.jp
+$boost=2,site=www.naro.go.jp
+$boost=3,site=www.fsc.go.jp
 $boost=2,site=eatpick.com
 
 ! --- 専門誌・料理教育 ---
@@ -247,20 +247,20 @@ $boost=2,site=www.jmi.or.jp
 !=============================================================
 
 ! --- 中央省庁・国立研究所（最高信頼性）---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+$boost=3,site=www.e-healthnet.mhlw.go.jp
+$boost=3,site=www.ncc.go.jp
 $boost=3,site=ganjoho.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.ncvc.go.jp
+$boost=3,site=www.niid.go.jp
+$boost=3,site=www.ncnp.go.jp
+$boost=3,site=www.pmda.go.jp
+$boost=3,site=www.fsc.go.jp
+$boost=3,site=www.nihs.go.jp
+$boost=3,site=www.nho.go.jp
+$boost=2,site=www.ncchd.go.jp
+$boost=2,site=www.nrcd.go.jp
+$boost=2,site=www.rehab.go.jp
 
 ! --- 医師会・歯科医師会・薬剤師会 ---
 $boost=3,site=www.med.or.jp
@@ -367,9 +367,9 @@ $boost=2,site=medicalnote.jp
 $boost=2,site=www.m3.com
 
 ! --- 薬・医薬品情報 ---
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.pmda.go.jp
 $boost=2,site=medical.eisai.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.info.pmda.go.jp
 
 ! --- 専門医による個人発信（実績確認済み）---
 /kutsunasatoshi/$boost=3,site=note.com
@@ -381,16 +381,16 @@ $boost=2,site=medical.eisai.jp
 !=============================================================
 
 ! --- 公的一次情報 ---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.fsa.go.jp
+$boost=3,site=www.nta.go.jp
+$boost=3,site=www.e-tax.nta.go.jp
 $boost=3,site=www.boj.or.jp
 /research/$boost=3,site=www.boj.or.jp
 /statistics/$boost=3,site=www.boj.or.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mof.go.jp
+$boost=3,site=edinet.fsa.go.jp
+$boost=3,site=www.e-stat.go.jp
+$boost=3,site=www.stat.go.jp
 
 ! --- 日本取引所グループ（JPX）---
 $boost=3,site=www.jpx.co.jp
@@ -522,7 +522,7 @@ $boost=2,site=ikedanobuo.livedoor.biz
 !=============================================================
 
 ! --- 公的機関 ---
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mlit.go.jp
 $boost=2,site=www.suumo.jp
 /article/$boost=2,site=suumo.jp
 
@@ -646,7 +646,7 @@ $boost=2,site=www.diy-shop.jp
 /how_to/$boost=3,site=www.diy-shop.jp
 
 ! --- 電力・エネルギー ---
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.enecho.meti.go.jp
 $boost=2,site=www.tepco.co.jp
 $boost=2,site=www.kepco.co.jp
 $boost=2,site=www.chuden.co.jp
@@ -1093,8 +1093,8 @@ $boost=2,site=techplay.jp
 /column/$boost=1,site=techplay.jp
 
 ! IPA（情報処理推進機構）
-\$boost=1.*site=.*.go.jp
-/security/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.ipa.go.jp
+/security/$boost=3,site=www.ipa.go.jp
 
 ! JPCERT/CC（セキュリティ）
 $boost=3,site=www.jpcert.or.jp
@@ -1203,22 +1203,22 @@ $boost=2,site=www.oxfordlearnersdictionaries.com
 ! C-2: 学術・科学・研究機関
 !=============================================================
 
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.jstage.jst.go.jp
 $boost=3,site=ci.nii.ac.jp
 $boost=3,site=www.nii.ac.jp
 $boost=3,site=www.riken.jp
 /news/$boost=3,site=www.riken.jp
 /research/$boost=3,site=www.riken.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.aist.go.jp
+$boost=3,site=www.nict.go.jp
 $boost=3,site=www.jaxa.jp
 $boost=3,site=www.nao.ac.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=scienceportal.jst.go.jp
 $boost=3,site=natgeo.nikkeibp.co.jp
 $boost=3,site=www.nikkei-science.com
 $boost=2,site=www.astroarts.co.jp
 /news/$boost=3,site=www.astroarts.co.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=blog.miraikan.jst.go.jp
 $boost=2,site=www.ipsj.or.jp
 $boost=2,site=www.ieice.org
 $boost=3,site=www.jsai.or.jp
@@ -1283,7 +1283,7 @@ $boost=2,site=www.tokyomedicaluniv.ac.jp
 ! C-4: 資格・試験・受験
 !=============================================================
 
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.jitec.ipa.go.jp
 $boost=3,site=www.dnc.ac.jp
 $boost=2,site=www.iibc-global.org
 $boost=2,site=www.eiken.or.jp
@@ -1335,7 +1335,7 @@ $boost=2,site=a244.hateblo.jp
 $boost=2,site=mathtrain.jp
 $boost=2,site=www.jps.or.jp
 $boost=2,site=www.chemistry.or.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.jstage.jst.go.jp
 
 ! 高校・大学数学解説
 $boost=2,site=manabitimes.jp
@@ -1407,8 +1407,8 @@ $boost=2,site=www.chikumashobo.co.jp
 $boost=2,site=www.shinchosha.co.jp
 $boost=2,site=www.bunshun.co.jp
 $boost=2,site=www.kadokawa.co.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.ndl.go.jp
+$boost=2,site=dl.ndl.go.jp
 $boost=2,site=www.keibunsha.co.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -1561,14 +1561,14 @@ $boost=2,site=www.sportsnavi.com
 
 ! --- 公式機関 ---
 $boost=3,site=www.joc.or.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.jpnsport.go.jp
 $boost=2,site=www.npb.or.jp
 $boost=2,site=www.jleague.jp
 $boost=2,site=www.jfa.jp
 $boost=2,site=www.bj-league.com
 $boost=2,site=www.bleague.jp
 $boost=2,site=www.rugby-japan.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.jra.go.jp
 $boost=2,site=www.jbpf.or.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -1621,7 +1621,7 @@ $boost=2,site=president.jp
 ! --- 科学専門 ---
 $boost=3,site=www.nikkei-science.com
 $boost=3,site=natgeo.nikkeibp.co.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=scienceportal.jst.go.jp
 $boost=2,site=www.astroarts.co.jp
 /news/$boost=3,site=www.astroarts.co.jp
 
@@ -1639,60 +1639,60 @@ $boost=2,site=wired.jp
 !=============================================================
 
 ! --- 中央省庁 ---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.digital.go.jp
+$boost=3,site=www.soumu.go.jp
+$boost=3,site=www.meti.go.jp
+$boost=3,site=www.mhlw.go.jp
+$boost=3,site=www.mext.go.jp
+$boost=3,site=www.mof.go.jp
+$boost=3,site=www.mofa.go.jp
+$boost=3,site=www.cao.go.jp
+$boost=3,site=www.env.go.jp
+$boost=3,site=www.npa.go.jp
+$boost=3,site=www.moj.go.jp
+$boost=3,site=www.caa.go.jp
+$boost=3,site=www.jftc.go.jp
+$boost=3,site=www.ppc.go.jp
+$boost=3,site=www.courts.go.jp
+$boost=3,site=www.stat.go.jp
+$boost=3,site=www.ndl.go.jp
+$boost=3,site=www.e-gov.go.jp
+$boost=3,site=elaws.e-gov.go.jp
+$boost=3,site=www.chusho.meti.go.jp
+$boost=3,site=www.nta.go.jp
+$boost=3,site=www.e-tax.nta.go.jp
+$boost=3,site=www.fsa.go.jp
+$boost=3,site=edinet.fsa.go.jp
+$boost=2,site=www.maff.go.jp
+$boost=3,site=www.mlit.go.jp
 $boost=3,site=www.boj.or.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.e-stat.go.jp
 
 ! --- 独立行政法人・国立研究開発法人 ---
-\$boost=1.*site=.*.go.jp
-/security/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.ipa.go.jp
+/security/$boost=3,site=www.ipa.go.jp
 $boost=3,site=www.riken.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.aist.go.jp
 $boost=3,site=www.nii.ac.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.nict.go.jp
 $boost=3,site=www.jaxa.jp
 $boost=3,site=www.nao.ac.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.nies.go.jp
+$boost=3,site=www.ncvc.go.jp
+$boost=3,site=www.ncc.go.jp
 $boost=3,site=ganjoho.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.niid.go.jp
+$boost=3,site=www.ncnp.go.jp
+$boost=3,site=www.pmda.go.jp
+$boost=3,site=www.fsc.go.jp
+$boost=3,site=www.jstage.jst.go.jp
 $boost=3,site=ci.nii.ac.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.jst.go.jp
+$boost=2,site=www.naro.go.jp
 $boost=3,site=www.ninjal.ac.jp
 $boost=2,site=www.rekihaku.ac.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.kahaku.go.jp
+$boost=2,site=www.nmwa.go.jp
 
 ! --- 法律・司法 ---
 $boost=3,site=www.nichibenren.or.jp
@@ -1767,7 +1767,7 @@ $boost=2,site=www.peachaviation.com
 $boost=2,site=www.jetstar.com
 
 ! --- 旅行・観光 ---
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.jnto.go.jp
 $boost=2,site=www.travel.co.jp
 $boost=2,site=travel.rakuten.co.jp
 $boost=2,site=www.jalan.net
@@ -1776,12 +1776,12 @@ $boost=2,site=www.jalan.net
 ! F-2: 農業・林業・水産・環境
 !=============================================================
 
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.maff.go.jp
+$boost=3,site=www.env.go.jp
+$boost=2,site=www.naro.go.jp
+$boost=2,site=www.affrc.maff.go.jp
 $boost=2,site=www.renewable-ei.org
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.enecho.meti.go.jp
 
 !=============================================================
 ! F-3: 地方自治体・地域情報（公的機関として信頼性高）
@@ -2454,16 +2454,16 @@ $boost=2,site=www.med.nihon-u.ac.jp
 $boost=2,site=www.teikyo-u.ac.jp
 
 ! --- 健康保険・年金 ---
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.nenkin.go.jp
 $boost=3,site=www.kyoukaikenpo.or.jp
 $boost=2,site=www.kenporen.com
 $boost=3,site=www.hokeniryo.metro.tokyo.lg.jp
 
 ! --- 介護・福祉 ---
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/hukushi_kaigo/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/hukushi_kaigo/$boost=3,site=www.mhlw.go.jp
+$boost=2,site=www.wam.go.jp
+$boost=2,site=www.kaigokensaku.mhlw.go.jp
 
 ! --- 口腔・歯科 ---
 $boost=2,site=www.jda.or.jp
@@ -2478,10 +2478,10 @@ $boost=2,site=jins.com
 /contents/$boost=2,site=jins.com
 
 ! --- メンタルヘルス ---
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.ncnp.go.jp
 $boost=2,site=www.jspn.or.jp
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/kokoro/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/kokoro/$boost=3,site=www.mhlw.go.jp
 
 ! --- アレルギー ---
 $boost=2,site=www.jsaweb.jp
@@ -2492,29 +2492,29 @@ $boost=2,site=allergyportal.jp
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ! --- 労働・雇用 ---
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/koyou_roudou/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/koyou_roudou/$boost=3,site=www.mhlw.go.jp
+$boost=3,site=jsite.mhlw.go.jp
+$boost=2,site=www.hellowork.mhlw.go.jp
+$boost=2,site=www.roudou-kijun.mhlw.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/$boost=3,site=www.mhlw.go.jp
 
 ! --- 消費者トラブル ---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/news/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.caa.go.jp
+$boost=3,site=www.kokusen.go.jp
+/news/$boost=3,site=www.kokusen.go.jp
 
 ! --- 行政手続き ---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.e-gov.go.jp
+$boost=3,site=elaws.e-gov.go.jp
+$boost=3,site=laws.e-gov.go.jp
+$boost=3,site=www.digital.go.jp
+$boost=2,site=mynumber.soumu.go.jp
 
 ! --- 国際・外交 ---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mofa.go.jp
+$boost=2,site=www.jetro.go.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! 追加セクション: 教育・学習（さらに拡充）
@@ -2567,9 +2567,9 @@ $boost=2,site=code.visualstudio.com
 /docs/$boost=2,site=code.visualstudio.com
 
 ! --- 図書館・アーカイブ ---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.ndl.go.jp
+$boost=2,site=dl.ndl.go.jp
+$boost=2,site=rnavi.ndl.go.jp
 $boost=2,site=www.library.metro.tokyo.lg.jp
 $boost=2,site=www.pref.osaka.lg.jp
 /library/$boost=2,site=www.pref.osaka.lg.jp
@@ -2578,13 +2578,13 @@ $boost=2,site=www.city.kyoto.lg.jp
 
 ! --- 博物館・美術館 ---
 $boost=2,site=www.tnm.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.kahaku.go.jp
+$boost=2,site=www.nmwa.go.jp
 $boost=2,site=www.moma.pref.kanagawa.jp
 $boost=2,site=www.city.nagoya.jp
 /mugendai/$boost=2,site=www.city.nagoya.jp
 $boost=2,site=www.nmaj.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.momat.go.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! 追加セクション: 金融・経済（さらに拡充）
@@ -2600,23 +2600,23 @@ $boost=2,site=www.twamasset.jp
 $boost=2,site=www.shinkin-am.co.jp
 
 ! --- iDeCo・NISA制度情報 ---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/nisa/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.ideco.go.jp
+$boost=3,site=www.fsa.go.jp
+/nisa/$boost=3,site=www.fsa.go.jp
 $boost=3,site=www.jpx.co.jp
 /learning/$boost=3,site=www.jpx.co.jp
 
 ! --- 住宅ローン ---
 $boost=2,site=www.flat35.com
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.jhf.go.jp
 $boost=2,site=suumo.jp
 /article/$boost=2,site=suumo.jp
 
 ! --- 年金・社会保険 ---
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.nenkin.go.jp
 $boost=3,site=www.kyoukaikenpo.or.jp
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/nenkin/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/nenkin/$boost=3,site=www.mhlw.go.jp
 
 ! --- 海外経済・国際金融 ---
 $boost=2,site=jp.reuters.com
@@ -2646,9 +2646,9 @@ $boost=1,site=www.kose-cosmeport.co.jp
 $boost=2,site=www.sc-johnson.co.jp
 
 ! --- 防災・安全 ---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.bousai.go.jp
+$boost=3,site=www.fdma.go.jp
+$boost=3,site=www.jma.go.jp
 $boost=2,site=www.metro.tokyo.lg.jp
 /bousai/$boost=3,site=www.metro.tokyo.lg.jp
 
@@ -2659,31 +2659,31 @@ $boost=2,site=www.anicom-sompo.co.jp
 ! 日本獣医師会
 $boost=3,site=www.nichiju.or.jp
 ! 環境省（ペット適正飼養）
-\$boost=1.*site=.*.go.jp
-/nature/dobutsu/aigo/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.env.go.jp
+/nature/dobutsu/aigo/$boost=3,site=www.env.go.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! 追加セクション: 社会・ニュース・トレンド（さらに拡充）
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ! --- 統計・データ ---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.e-stat.go.jp
+$boost=3,site=www.stat.go.jp
 $boost=2,site=www.oecd.org
 $boost=2,site=www.imf.org
 $boost=2,site=data.worldbank.org
 
 ! --- 環境・気候 ---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/jma/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.env.go.jp
+$boost=3,site=www.jma.go.jp
+/jma/$boost=3,site=www.jma.go.jp
+$boost=3,site=www.nies.go.jp
 $boost=2,site=www.ipcc.ch
 
 ! --- 人権・多様性 ---
-\$boost=1.*site=.*.go.jp
-/JINKEN/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.moj.go.jp
+/JINKEN/$boost=3,site=www.moj.go.jp
+$boost=2,site=www.gender.go.jp
 
 ! --- ファクトチェック ---
 $boost=3,site=factcheckcenter.jp
@@ -2705,7 +2705,7 @@ $boost=2,site=www.amazon.co.jp
 /gp/product/$boost=1,site=www.amazon.co.jp
 $boost=2,site=honto.jp
 $boost=2,site=calil.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.ndl.go.jp
 $boost=2,site=www.books.or.jp
 $boost=2,site=www.yondemi.jp
 
@@ -2770,7 +2770,7 @@ $boost=2,site=hamanaka.co.jp
 $boost=3,site=www.nhk.or.jp
 /mite/shumi/$boost=3,site=www.nhk.or.jp
 ! 国立研究開発法人 農研機構
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.naro.go.jp
 ! 住友化学園芸
 $boost=3,site=www.sc-engei.co.jp
 /navi/$boost=3,site=www.sc-engei.co.jp
@@ -2811,13 +2811,13 @@ $boost=2,site=www.coleman.co.jp
 ! --- 乗り物・自転車 ---
 $boost=2,site=www.jaf.or.jp
 /eco-safety/$boost=3,site=www.jaf.or.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mlit.go.jp
 $boost=2,site=car.watch.impress.co.jp
 ! 公益財団法人自転車駐車場整備センター
 $boost=2,site=www.japan-cycling.jp
 ! 車検情報（国交省）
-\$boost=1.*site=.*.go.jp
-/jidosha/jidosha_fr4_000016.html/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mlit.go.jp
+/jidosha/jidosha_fr4_000016.html/$boost=3,site=www.mlit.go.jp
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -2842,8 +2842,8 @@ $boost=2,site=www.isuzu.co.jp
 $boost=2,site=www.hino.co.jp
 $boost=2,site=www.jaf.or.jp
 /eco-safety/$boost=3,site=www.jaf.or.jp
-\$boost=1.*site=.*.go.jp
-/road/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mlit.go.jp
+/road/$boost=3,site=www.mlit.go.jp
 
 !=============================================================
 ! 電機・精密機械・半導体
@@ -2917,9 +2917,9 @@ $boost=2,site=www.au.com
 $boost=2,site=www.nhk.or.jp
 $boost=2,site=www.nhk.or.jp
 /strl/$boost=3,site=www.nhk.or.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.soumu.go.jp
 
-/main_sosiki/joho_tsusin/\$boost=1.*site=.*.go.jp
+/main_sosiki/joho_tsusin/$boost=3,site=www.soumu.go.jp
 $boost=2,site=ntttech.ntt.co.jp
 
 !=============================================================
@@ -2952,11 +2952,11 @@ $boost=2,site=www.iskprod.com
 ! 環境・エネルギー・サステナビリティ
 !=============================================================
 
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.env.go.jp
+$boost=3,site=www.jma.go.jp
+$boost=3,site=www.nies.go.jp
 $boost=2,site=www.renewable-ei.org
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.enecho.meti.go.jp
 $boost=2,site=www.tepco.co.jp
 /pg/company/ir/$boost=2,site=www.tepco.co.jp
 $boost=2,site=www.kepco.co.jp
@@ -2973,10 +2973,10 @@ $boost=2,site=www.chugoku-epco.co.jp
 ! 農業・食料安全保障
 !=============================================================
 
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.maff.go.jp
+$boost=3,site=www.fsc.go.jp
+$boost=3,site=www.naro.go.jp
+$boost=2,site=www.affrc.maff.go.jp
 $boost=2,site=www.inakainaka.jp
 $boost=2,site=www.ja-group.jp
 $boost=2,site=www.nosai.or.jp
@@ -2985,23 +2985,23 @@ $boost=2,site=www.nosai.or.jp
 ! 社会保障・年金・福祉
 !=============================================================
 
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.nenkin.go.jp
 $boost=3,site=www.kyoukaikenpo.or.jp
 $boost=2,site=www.kenporen.com
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/hukushi_kaigo/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/hukushi_kaigo/$boost=3,site=www.mhlw.go.jp
+$boost=2,site=www.wam.go.jp
 $boost=2,site=www.fukushizaidan.jp
 
 !=============================================================
 ! 消防・防災・安全
 !=============================================================
 
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/jma/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.fdma.go.jp
+$boost=3,site=www.bousai.go.jp
+$boost=3,site=www.jma.go.jp
+/jma/$boost=3,site=www.jma.go.jp
+$boost=2,site=www.npa.go.jp
 $boost=2,site=www.city.osaka.lg.jp
 /shobo/$boost=2,site=www.city.osaka.lg.jp
 $boost=2,site=www.tfd.metro.tokyo.lg.jp
@@ -3120,22 +3120,22 @@ $boost=3,site=www.nhk.or.jp
 ! 「住宅ローン 比較」「節税」「確定申告」金融系検索向け追加
 !=============================================================
 
-\$boost=1.*site=.*.go.jp
-/taxes/shiraberu/zeimokubetsu/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.nta.go.jp
+/taxes/shiraberu/zeimokubetsu/$boost=3,site=www.nta.go.jp
+$boost=3,site=www.e-tax.nta.go.jp
 $boost=2,site=www.yayoi-kk.co.jp
 /shinkoku/$boost=3,site=www.yayoi-kk.co.jp
 $boost=3,site=www.flat35.com
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.jhf.go.jp
 
 !=============================================================
 ! 「転職 書き方」「職務経歴書」キャリア系検索向け
 !=============================================================
 
 ! 厚生労働省（ハローワーク）
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/koyou_roudou/koyou/hellowork.html/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/koyou_roudou/koyou/hellowork.html/$boost=3,site=www.mhlw.go.jp
+$boost=3,site=www.hellowork.mhlw.go.jp
 ! doda（実データ保有・信頼できる）
 $boost=2,site=doda.jp
 /guide/$boost=2,site=doda.jp
@@ -3201,14 +3201,14 @@ $boost=2,site=www.python.jp
 
 ! --- Web3・ブロックチェーン（学術的な記事のみ）---
 ! IPA・デジタル庁（ブロックチェーン公共利用）
-\$boost=1.*site=.*.go.jp
-/digital/\$boost=1.*site=.*.go.jp
+$boost=2,site=www.ipa.go.jp
+/digital/$boost=2,site=www.digital.go.jp
 
 ! --- 量子コンピュータ ---
 $boost=2,site=www.riken.jp
 /quantum/$boost=3,site=www.riken.jp
-\$boost=1.*site=.*.go.jp
-/domain/technology/nics/\$boost=1.*site=.*.go.jp
+$boost=2,site=www.aist.go.jp
+/domain/technology/nics/$boost=2,site=www.aist.go.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! 追加セクション: 各種業界団体・専門団体
@@ -3218,8 +3218,8 @@ $boost=2,site=www.riken.jp
 $boost=2,site=www.jisa.or.jp
 $boost=2,site=www.jfed.net
 $boost=2,site=www.jaisa.jp
-\$boost=1.*site=.*.go.jp
-/policy/mono_info_service/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.meti.go.jp
+/policy/mono_info_service/$boost=3,site=www.meti.go.jp
 
 ! --- 医療・健康 ---
 $boost=3,site=www.med.or.jp
@@ -3234,8 +3234,8 @@ $boost=2,site=www.cst.ac.jp
 $boost=3,site=www.nichibenren.or.jp
 $boost=2,site=www.toben.or.jp
 $boost=2,site=www.osakaben.or.jp
-\$boost=1.*site=.*.go.jp
-/taxes/practitioner/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.nta.go.jp
+/taxes/practitioner/$boost=3,site=www.nta.go.jp
 $boost=2,site=www.nichizeiren.or.jp
 $boost=2,site=www.shiho-shoshi.or.jp
 $boost=2,site=www.lec-jp.com
@@ -3253,8 +3253,8 @@ $boost=2,site=www.scsj.or.jp
 $boost=2,site=www.jfci.or.jp
 $boost=2,site=www.foods.or.jp
 $boost=2,site=www.jgap.jp
-\$boost=1.*site=.*.go.jp
-/j/syouan/\$boost=1.*site=.*.go.jp
+$boost=2,site=www.maff.go.jp
+/j/syouan/$boost=3,site=www.maff.go.jp
 
 ! --- 環境・エネルギー ---
 $boost=2,site=www.renewable-ei.org
@@ -3271,8 +3271,8 @@ $boost=2,site=www.tdb.co.jp
 ! --- 教育・福祉 ---
 $boost=2,site=www.jasso.or.jp
 /scholarship/$boost=3,site=www.jasso.or.jp
-\$boost=1.*site=.*.go.jp
-/a_menu/koutou/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mext.go.jp
+/a_menu/koutou/$boost=3,site=www.mext.go.jp
 $boost=2,site=www.kyoikuho.jp
 
 ! --- 国際機関日本事務所 ---
@@ -3315,18 +3315,18 @@ $boost=2,site=www.ottava.co.jp
 
 ! --- 伝統芸能・日本文化 ---
 $boost=2,site=www.nohgaku.or.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.ntj.jac.go.jp
 $boost=2,site=www.shochiku.co.jp
 $boost=2,site=www.kabuki.ne.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www2.ntj.jac.go.jp
 
 ! --- 美術・工芸 ---
 $boost=2,site=www.tnm.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.momat.go.jp
 $boost=2,site=www.nact.jp
 $boost=2,site=www.bijutsutecho.com
 $boost=2,site=artscape.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.nmwa.go.jp
 $boost=2,site=www.mori.art.museum
 $boost=2,site=bijutsu.co.jp
 
@@ -3347,7 +3347,7 @@ $boost=2,site=www.akitashoten.co.jp
 $boost=2,site=younganimal.hakusensha.co.jp
 
 ! --- 旅行・観光・グルメ ---
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.jnto.go.jp
 $boost=2,site=www.welcome.city.kyoto.jp
 $boost=2,site=www.kanko.metro.tokyo.lg.jp
 $boost=2,site=www.osaka-info.jp
@@ -3374,15 +3374,15 @@ $boost=2,site=www.nazodoki.com
 
 ! --- 国家試験・資格 ---
 ! 医師・看護師・薬剤師
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/isei/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/isei/$boost=3,site=www.mhlw.go.jp
 ! 弁護士・司法試験
-\$boost=1.*site=.*.go.jp
-/jinji/index.html/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.moj.go.jp
+/jinji/index.html/$boost=3,site=www.moj.go.jp
 $boost=2,site=www.nichibenren.or.jp
 ! 公認会計士
-\$boost=1.*site=.*.go.jp
-/cpaaob/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.fsa.go.jp
+/cpaaob/$boost=3,site=www.fsa.go.jp
 ! 税理士
 $boost=2,site=www.nichizeiren.or.jp
 ! 社会保険労務士
@@ -3390,18 +3390,18 @@ $boost=2,site=www.sharoushi.or.jp
 ! 行政書士
 $boost=2,site=www.gyosei.or.jp
 ! 建築士
-\$boost=1.*site=.*.go.jp
-/totikensangyo/const/1_6_bt_000016.html/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mlit.go.jp
+/totikensangyo/const/1_6_bt_000016.html/$boost=3,site=www.mlit.go.jp
 ! 情報処理技術者試験
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.jitec.ipa.go.jp
 ! 簿記
 $boost=2,site=www.kentei.org
 ! 英語検定
 $boost=2,site=www.eiken.or.jp
 $boost=2,site=www.iibc-global.org
 ! 危険物・消防
-\$boost=1.*site=.*.go.jp
-/qualification/\$boost=1.*site=.*.go.jp
+$boost=2,site=www.fdma.go.jp
+/qualification/$boost=2,site=www.fdma.go.jp
 
 ! --- 大学・短大 専門的なWebページ ---
 $boost=2,site=www.u-tokyo.ac.jp
@@ -3434,11 +3434,11 @@ $boost=2,site=ikedanobuo.livedoor.biz
 /agora/$boost=2,site=ikedanobuo.livedoor.biz
 
 ! --- 歴史・文化 ---
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.ndl.go.jp
 $boost=2,site=www.rekihaku.ac.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.bunka.go.jp
+$boost=2,site=www.kahaku.go.jp
+$boost=2,site=www.jinken.go.jp
 
 ! --- 宗教・民俗学 ---
 $boost=2,site=www.jinja.or.jp
@@ -3446,8 +3446,8 @@ $boost=2,site=www.nichiren.or.jp
 $boost=2,site=www.bca.gr.jp
 
 ! --- 社会学・政治学 ---
-\$boost=1.*site=.*.go.jp
-/sourifu/\$boost=1.*site=.*.go.jp
+$boost=2,site=www.cao.go.jp
+/sourifu/$boost=2,site=www.cao.go.jp
 $boost=2,site=www.jiji.com
 $boost=2,site=www.asahi.com
 /politics/$boost=2,site=www.asahi.com
@@ -3484,10 +3484,10 @@ $boost=2,site=www.genetics.or.jp
 $boost=2,site=www.sbj.or.jp
 
 ! --- 地球科学・気象 ---
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.jma.go.jp
 $boost=2,site=www.gsj.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.mri-jma.go.jp
+$boost=2,site=www.jamstec.go.jp
 
 ! --- 宇宙科学 ---
 $boost=3,site=www.jaxa.jp
@@ -3500,11 +3500,11 @@ $boost=2,site=www.isas.jaxa.jp
 ! --- 情報科学・AI ---
 $boost=3,site=www.jsai.or.jp
 $boost=2,site=www.ipsj.or.jp
-\$boost=1.*site=.*.go.jp
-/policy/it_policy/ai/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.meti.go.jp
+/policy/it_policy/ai/$boost=3,site=www.meti.go.jp
+$boost=3,site=www.soumu.go.jp
 
-/main_sosiki/joho_tsusin/d-syohi/ai.html/\$boost=1.*site=.*.go.jp
+/main_sosiki/joho_tsusin/d-syohi/ai.html/$boost=3,site=www.soumu.go.jp
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -3586,12 +3586,12 @@ $boost=3,site=www.nhk.or.jp
 ! こそだてハック（医師・専門家監修）
 $boost=2,site=kosodatehack.jp
 ! 子育てサポートセンター
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/kodomo/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/kodomo/$boost=3,site=www.mhlw.go.jp
 ! 日本小児科学会
 $boost=3,site=www.jpeds.or.jp
 ! こども家庭庁
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.cfa.go.jp
 ! 日本周産期・新生児医学会
 $boost=2,site=www.jspnm.com
 ! 日本アレルギー学会（小児アレルギー）
@@ -3602,8 +3602,8 @@ $boost=2,site=www.ehonnavi.net
 
 ! --- 小学校・中学校・高校の教育コンテンツ ---
 ! 文部科学省
-\$boost=1.*site=.*.go.jp
-/a_menu/shotou/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mext.go.jp
+/a_menu/shotou/$boost=3,site=www.mext.go.jp
 ! NHK for School（最高品質）
 $boost=3,site=www.nhk.or.jp
 /school/$boost=3,site=www.nhk.or.jp
@@ -3641,10 +3641,10 @@ $boost=2,site=careerwings.jp
 $boost=2,site=levtech.jp
 
 ! --- 労働法・働き方改革 ---
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/index.html/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/index.html/$boost=3,site=www.mhlw.go.jp
+$boost=3,site=www.roudou-kijun.mhlw.go.jp
+$boost=3,site=www.hellowork.mhlw.go.jp
 $boost=2,site=www.jilaf.or.jp
 $boost=2,site=www.jtuc-rengo.or.jp
 
@@ -3653,9 +3653,9 @@ $boost=2,site=www.jtuc-rengo.or.jp
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ! --- アクセシビリティ ---
-\$boost=1.*site=.*.go.jp
-/main_sosiki/joho_tsusin/b_free/b_free02.html/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.soumu.go.jp
+/main_sosiki/joho_tsusin/b_free/b_free02.html/$boost=3,site=www.soumu.go.jp
+$boost=3,site=www.jis.go.jp
 ! ウェブアクセシビリティ基盤委員会
 $boost=3,site=waic.jp
 $boost=2,site=accessible-usable.net
@@ -3663,7 +3663,7 @@ $boost=3,site=r.lde.jp
 $boost=3,site=masafumi.tumblr.com
 
 ! --- デザインシステム ---
-\$boost=1.*site=.*.go.jp
+$boost=2,site=design.digital.go.jp
 $boost=2,site=smarthr.design
 $boost=2,site=www.figma.com
 /community/$boost=2,site=www.figma.com
@@ -3711,11 +3711,11 @@ $boost=2,site=www.nikkeibp.co.jp
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ! --- 旅行・観光公式 ---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/kankocho/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.jnto.go.jp
+$boost=3,site=www.mlit.go.jp
+/kankocho/$boost=3,site=www.mlit.go.jp
 $boost=2,site=www.tourism.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.kanko庁.mlit.go.jp
 $boost=2,site=www.japantravel.com
 $boost=2,site=www.seejapan.co.uk
 
@@ -3735,8 +3735,8 @@ $boost=2,site=www.pref.yamanashi.jp
 /kankou/$boost=2,site=www.pref.yamanashi.jp
 
 ! --- 世界遺産・史跡 ---
-\$boost=1.*site=.*.go.jp
-/seisaku/bunkazai/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.bunka.go.jp
+/seisaku/bunkazai/$boost=3,site=www.bunka.go.jp
 $boost=2,site=www.whc.unesco.org
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -3745,7 +3745,7 @@ $boost=2,site=www.whc.unesco.org
 
 ! --- 総合スポーツ ---
 $boost=3,site=www.joc.or.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.jpnsport.go.jp
 $boost=2,site=www.japan-sports.or.jp
 
 ! --- 野球 ---
@@ -3796,7 +3796,7 @@ $boost=2,site=www.karatedo.co.jp
 $boost=2,site=www.judo.or.jp
 
 ! --- 競馬・競輪（公式のみ）---
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.jra.go.jp
 $boost=2,site=www.keirin.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -3892,40 +3892,40 @@ $boost=2,site=a244.hateblo.jp
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ! --- 確定申告・税務（よく検索される）---
-\$boost=1.*site=.*.go.jp
-/taxes/shiraberu/taxanswer/shotoku/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/taxes/tetsuzuki/shinsei/shinkoku/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/taxes/shiraberu/taxanswer/hojin/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.nta.go.jp
+/taxes/shiraberu/taxanswer/shotoku/$boost=3,site=www.nta.go.jp
+$boost=3,site=www.nta.go.jp
+/taxes/tetsuzuki/shinsei/shinkoku/$boost=3,site=www.nta.go.jp
+$boost=3,site=www.nta.go.jp
+/taxes/shiraberu/taxanswer/hojin/$boost=3,site=www.nta.go.jp
+$boost=3,site=www.e-tax.nta.go.jp
 
 ! --- 年金・社会保険（よく検索される）---
-\$boost=1.*site=.*.go.jp
-/service/nenkin/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/service/jukyu/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.nenkin.go.jp
+/service/nenkin/$boost=3,site=www.nenkin.go.jp
+$boost=3,site=www.nenkin.go.jp
+/service/jukyu/$boost=3,site=www.nenkin.go.jp
 
 ! --- 雇用・労働（よく検索される）---
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/index.html/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/index.html/$boost=3,site=www.mhlw.go.jp
+$boost=3,site=www.roudou-kijun.mhlw.go.jp
+$boost=3,site=www.hellowork.mhlw.go.jp
+$boost=2,site=jsite.mhlw.go.jp
 
 ! --- 育児・子育て支援 ---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/kodomo/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.cfa.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/kodomo/$boost=3,site=www.mhlw.go.jp
 
 ! --- 国民健康保険・介護保険 ---
 $boost=3,site=www.kyoukaikenpo.or.jp
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/$boost=3,site=www.mhlw.go.jp
 
 ! --- 生活保護・困窮支援 ---
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/$boost=3,site=www.mhlw.go.jp
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -4075,10 +4075,10 @@ $boost=2,site=www.nittokyo.or.jp
 $boost=2,site=dm-net.co.jp
 ! 高血圧
 $boost=3,site=www.jpnsh.jp
-\$boost=1.*site=.*.go.jp
-/information/heart/h-02-023.html/\$boost=1.*site=.*.go.jp
+$boost=2,site=www.e-healthnet.mhlw.go.jp
+/information/heart/h-02-023.html/$boost=3,site=www.e-healthnet.mhlw.go.jp
 ! がん
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.ncc.go.jp
 $boost=3,site=ganjoho.jp
 /public/$boost=3,site=ganjoho.jp
 $boost=2,site=www.jsco.or.jp
@@ -4087,11 +4087,11 @@ $boost=2,site=www.colon.or.jp
 $boost=2,site=www.jbcs.gr.jp
 ! 心臓・循環器
 $boost=3,site=www.j-circ.or.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.ncvc.go.jp
 $boost=2,site=www.j-athero.org
 ! 脳・神経
 $boost=2,site=www.jns.gr.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.ncnp.go.jp
 $boost=2,site=www.neurology-jp.org
 ! 呼吸器
 $boost=2,site=www.jrs.or.jp
@@ -4109,7 +4109,7 @@ $boost=2,site=www.jsaweb.jp
 $boost=2,site=www.jallergy.com
 ! 精神・心療
 $boost=3,site=www.jspn.or.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.ncnp.go.jp
 $boost=2,site=www.j-cast.com
 /kaisha/2023/$boost=1,site=www.j-cast.com
 ! 骨・関節
@@ -4136,7 +4136,7 @@ $boost=2,site=anesth.or.jp
 ! 救急
 $boost=2,site=www.jaam.jp
 ! 感染症
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.niid.go.jp
 $boost=2,site=www.kansensho.or.jp
 ! 老年医学
 $boost=2,site=www.jpn-geriat-soc.or.jp
@@ -4154,8 +4154,8 @@ $boost=2,site=www.jsn.or.jp
 $boost=2,site=www.jshem.or.jp
 
 ! --- 薬・サプリメント（公的機関・製薬メーカー）---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.pmda.go.jp
+$boost=3,site=www.info.pmda.go.jp
 $boost=3,site=www.jpma.or.jp
 $boost=2,site=www.okusuri.or.jp
 $boost=2,site=www.pha.or.jp
@@ -4213,8 +4213,8 @@ $boost=2,site=www.chemistry.or.jp
 $boost=2,site=www.jscc.or.jp
 $boost=2,site=www.scsj.or.jp
 $boost=2,site=www.chem.or.jp
-\$boost=1.*site=.*.go.jp
-/domain/technology/chem/\$boost=1.*site=.*.go.jp
+$boost=2,site=www.aist.go.jp
+/domain/technology/chem/$boost=2,site=www.aist.go.jp
 
 ! --- 生物・生命科学 ---
 $boost=3,site=www.bsj.or.jp
@@ -4230,13 +4230,13 @@ $boost=2,site=www.imbio.kyoto-u.ac.jp
 $boost=2,site=biomedicalhacks.com
 
 ! --- 地球科学・地質 ---
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.jma.go.jp
 $boost=2,site=www.gsj.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.mri-jma.go.jp
+$boost=2,site=www.jamstec.go.jp
 $boost=2,site=www.jspe.jp
 $boost=2,site=www.dpri.kyoto-u.ac.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.bousai.go.jp
 
 ! --- 天文・宇宙科学 ---
 $boost=3,site=www.jaxa.jp
@@ -4257,8 +4257,8 @@ $boost=2,site=www.nao.ac.jp
 $boost=3,site=www.jsai.or.jp
 $boost=2,site=www.ipsj.or.jp
 $boost=2,site=www.ieice.org
-\$boost=1.*site=.*.go.jp
-/domain/technology/aarc/\$boost=1.*site=.*.go.jp
+$boost=2,site=www.aist.go.jp
+/domain/technology/aarc/$boost=2,site=www.aist.go.jp
 $boost=2,site=www.nii.ac.jp
 $boost=2,site=www.ml4nlp.jp
 $boost=2,site=www.anlp.jp
@@ -4266,9 +4266,9 @@ $boost=2,site=www.anlp.jp
 ! --- 材料・ナノテク ---
 $boost=2,site=www.mater-sci.jp
 $boost=2,site=www.jsm.gr.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/domain/technology/nano/\$boost=1.*site=.*.go.jp
+$boost=2,site=www.nims.go.jp
+$boost=2,site=www.aist.go.jp
+/domain/technology/nano/$boost=2,site=www.aist.go.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! 大規模追加セクション4: 金融・投資 細分化して大幅追加
@@ -4280,8 +4280,8 @@ $boost=2,site=www.toushin.or.jp
 $boost=2,site=www.toushin.com
 $boost=3,site=www.jpx.co.jp
 /learning/$boost=3,site=www.jpx.co.jp
-\$boost=1.*site=.*.go.jp
-/teach/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.fsa.go.jp
+/teach/$boost=3,site=www.fsa.go.jp
 $boost=2,site=www.am.mufg.jp
 $boost=2,site=www.nikkoam.com
 $boost=2,site=www.daiwa-am.co.jp
@@ -4317,7 +4317,7 @@ $boost=2,site=www.homes.co.jp
 
 ! --- 消費者金融・借金相談（公的機関のみ）---
 $boost=3,site=www.j-fsa.or.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.kokusen.go.jp
 $boost=2,site=www.houterasu.or.jp
 $boost=2,site=www.zengin.org
 
@@ -4360,16 +4360,16 @@ $boost=2,site=www.tepco.co.jp
 /ep/private/$boost=2,site=www.tepco.co.jp
 $boost=2,site=www.kepco.co.jp
 /home/$boost=2,site=www.kepco.co.jp
-\$boost=1.*site=.*.go.jp
-/category/electricity_and_gas/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.enecho.meti.go.jp
+/category/electricity_and_gas/$boost=3,site=www.enecho.meti.go.jp
 $boost=2,site=www.eccj.or.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.jyusetu.mlit.go.jp
 
 ! --- ゴミ・リサイクル・環境 ---
-\$boost=1.*site=.*.go.jp
-/recycle/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/policies/policy/consumer_policy/information/food_labeling/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.env.go.jp
+/recycle/$boost=3,site=www.env.go.jp
+$boost=2,site=www.caa.go.jp
+/policies/policy/consumer_policy/information/food_labeling/$boost=2,site=www.caa.go.jp
 $boost=2,site=www.3r-suishinkyogikai.jp
 $boost=2,site=www.jema-net.or.jp
 /consumer/recycle/$boost=2,site=www.jema-net.or.jp
@@ -4466,18 +4466,18 @@ $boost=2,site=docs.github.com
 $boost=2,site=docs.gitlab.com
 
 ! --- セキュリティ専門情報 ---
-\$boost=1.*site=.*.go.jp
-/security/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.ipa.go.jp
+/security/$boost=3,site=www.ipa.go.jp
 $boost=3,site=www.jpcert.or.jp
 /at/$boost=3,site=www.jpcert.or.jp
 /cc/$boost=3,site=www.jpcert.or.jp
 $boost=3,site=www.jpcert.or.jp
 /newsletter/$boost=3,site=www.jpcert.or.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.soumu.go.jp
 
-/main_sosiki/cybersecurity/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/security/\$boost=1.*site=.*.go.jp
+/main_sosiki/cybersecurity/$boost=3,site=www.soumu.go.jp
+$boost=2,site=www.nict.go.jp
+/security/$boost=2,site=www.nict.go.jp
 $boost=2,site=owasp.org
 $boost=2,site=utf-8.jp
 $boost=3,site=blog.flatt.tech
@@ -4487,7 +4487,7 @@ $boost=2,site=www.nri-secure.co.jp
 /report/$boost=2,site=www.nri-secure.co.jp
 
 ! --- デザイン・UX ---
-\$boost=1.*site=.*.go.jp
+$boost=2,site=design.digital.go.jp
 $boost=2,site=smarthr.design
 $boost=2,site=uxmilk.jp
 /article/$boost=2,site=uxmilk.jp
@@ -4516,8 +4516,8 @@ $boost=2,site=www.yotsuya-otsuka.co.jp
 
 ! --- 資格試験（主要資格）---
 ! 情報処理
-\$boost=1.*site=.*.go.jp
-/sg-crd/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.jitec.ipa.go.jp
+/sg-crd/$boost=3,site=www.jitec.ipa.go.jp
 ! AWS認定
 $boost=2,site=aws.amazon.com
 /jp/certification/$boost=3,site=aws.amazon.com
@@ -4525,30 +4525,30 @@ $boost=2,site=aws.amazon.com
 $boost=2,site=cloud.google.com
 /ja/certification/$boost=2,site=cloud.google.com
 ! 医師国家試験
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/isei/doctor-license/index.html/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/isei/doctor-license/index.html/$boost=3,site=www.mhlw.go.jp
 ! 薬剤師
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/isei/yakuzaishi-license/index.html/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/isei/yakuzaishi-license/index.html/$boost=3,site=www.mhlw.go.jp
 ! 看護師
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/isei/kango/index.html/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/isei/kango/index.html/$boost=3,site=www.mhlw.go.jp
 ! 理学療法士
 $boost=2,site=www.jpta.or.jp
 ! 作業療法士
 $boost=2,site=www.jaot.or.jp
 ! 公認会計士
-\$boost=1.*site=.*.go.jp
-/cpaaob/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.fsa.go.jp
+/cpaaob/$boost=3,site=www.fsa.go.jp
 $boost=2,site=www.jicpa.or.jp
 ! 税理士
 $boost=2,site=www.nichizeiren.or.jp
-\$boost=1.*site=.*.go.jp
-/taxes/zeirishi/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.nta.go.jp
+/taxes/zeirishi/$boost=3,site=www.nta.go.jp
 ! 社会保険労務士
 $boost=2,site=www.sharoushi.or.jp
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/sharoushi/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/sharoushi/$boost=3,site=www.mhlw.go.jp
 ! 行政書士
 $boost=2,site=www.gyosei.or.jp
 ! 司法書士
@@ -4558,13 +4558,13 @@ $boost=3,site=www.nichibenren.or.jp
 /legal_advice/$boost=3,site=www.nichibenren.or.jp
 ! 宅地建物取引士
 $boost=2,site=www.retpc.jp
-\$boost=1.*site=.*.go.jp
-/totikensangyo/const/1_6_bt_000018.html/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mlit.go.jp
+/totikensangyo/const/1_6_bt_000018.html/$boost=3,site=www.mlit.go.jp
 ! 電気工事士
 $boost=2,site=www.shiken.or.jp
 ! 危険物取扱者
-\$boost=1.*site=.*.go.jp
-/qualification/\$boost=1.*site=.*.go.jp
+$boost=2,site=www.fdma.go.jp
+/qualification/$boost=2,site=www.fdma.go.jp
 ! 簿記
 $boost=2,site=www.kentei.org
 ! ファイナンシャルプランナー
@@ -4587,9 +4587,9 @@ $boost=2,site=www.goethe.de
 $boost=2,site=www.institutfrancais.jp
 $boost=2,site=www.cervantes.es
 /jp/$boost=2,site=www.cervantes.es
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/j/japanese/\$boost=1.*site=.*.go.jp
+$boost=2,site=jpf.go.jp
+$boost=2,site=www.jpf.go.jp
+/j/japanese/$boost=2,site=www.jpf.go.jp
 $boost=2,site=eow.alc.co.jp
 $boost=2,site=www.alc.co.jp
 $boost=2,site=ejje.weblio.jp
@@ -4597,11 +4597,11 @@ $boost=2,site=ja.forvo.com
 $boost=2,site=www.chineseclass101.com
 
 ! --- 専門学校・職業訓練 ---
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyujin/roudou/index.html/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyujin/roudou/index.html/$boost=3,site=www.mhlw.go.jp
 $boost=2,site=www.javada.or.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.hellowork.mhlw.go.jp
+$boost=2,site=www.jeed.go.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! 大規模追加セクション8: エンタメ・文化・芸術（さらに大幅拡充）
@@ -4914,8 +4914,8 @@ $boost=2,site=www.toben.or.jp
 $boost=2,site=www.osakaben.or.jp
 
 ! --- 税務・会計詳細 ---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.nta.go.jp
+$boost=3,site=www.e-tax.nta.go.jp
 $boost=3,site=www.nichizeiren.or.jp
 $boost=2,site=www.jicpa.or.jp
 $boost=2,site=www.yayoi-kk.co.jp
@@ -4929,25 +4929,25 @@ $boost=2,site=www.kaikeishi.or.jp
 $boost=2,site=www.nichizeiren.or.jp
 
 ! --- 行政手続き（よく検索される）---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.e-gov.go.jp
+$boost=3,site=elaws.e-gov.go.jp
+$boost=3,site=mynumber.soumu.go.jp
+$boost=3,site=www.digital.go.jp
 $boost=2,site=www.city.tokyo.lg.jp
 $boost=2,site=www.metro.tokyo.lg.jp
 $boost=2,site=www.city.osaka.lg.jp
 
 ! --- 消費者問題 ---
-\$boost=1.*site=.*.go.jp
-/news/\$boost=1.*site=.*.go.jp
-/caution/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/policies/policy/consumer_policy/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.kokusen.go.jp
+/news/$boost=3,site=www.kokusen.go.jp
+/caution/$boost=3,site=www.kokusen.go.jp
+$boost=3,site=www.caa.go.jp
+/policies/policy/consumer_policy/$boost=3,site=www.caa.go.jp
 $boost=2,site=www.jcci.or.jp
 
 ! --- 交通安全 ---
-\$boost=1.*site=.*.go.jp
-/bureau/traffic/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.npa.go.jp
+/bureau/traffic/$boost=3,site=www.npa.go.jp
 $boost=3,site=www.jaf.or.jp
 /eco-safety/$boost=3,site=www.jaf.or.jp
 $boost=2,site=www.jtsa.or.jp
@@ -4958,8 +4958,8 @@ $boost=2,site=www.tensaku.jp
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ! --- 観光地・名所公式 ---
-\$boost=1.*site=.*.go.jp
-/destinations/\$boost=1.*site=.*.go.jp
+$boost=2,site=www.jnto.go.jp
+/destinations/$boost=2,site=www.jnto.go.jp
 $boost=2,site=www.sangakukan.jp
 $boost=2,site=www.welcome.city.kyoto.jp
 $boost=2,site=www.kanko.metro.tokyo.lg.jp
@@ -5034,32 +5034,32 @@ $boost=2,site=www.booking.com
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ! --- 食文化・郷土料理 ---
-\$boost=1.*site=.*.go.jp
-/j/keikaku/syokubunka/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/laboratory/karc/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.maff.go.jp
+/j/keikaku/syokubunka/$boost=3,site=www.maff.go.jp
+$boost=2,site=www.naro.go.jp
+/laboratory/karc/$boost=2,site=www.naro.go.jp
+$boost=2,site=fooddb.mext.go.jp
 $boost=2,site=www.cookpad.com
 
 ! --- 食品成分・栄養 ---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/information/food.html/\$boost=1.*site=.*.go.jp
+$boost=3,site=fooddb.mext.go.jp
+$boost=2,site=www.e-healthnet.mhlw.go.jp
+/information/food.html/$boost=3,site=www.e-healthnet.mhlw.go.jp
 $boost=3,site=www.dietitian.or.jp
 $boost=2,site=www.jclhns.org
 
 ! --- 食品安全・表示 ---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/policies/policy/food_labeling/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/j/syouan/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.fsc.go.jp
+$boost=3,site=www.caa.go.jp
+/policies/policy/food_labeling/$boost=3,site=www.caa.go.jp
+$boost=3,site=www.maff.go.jp
+/j/syouan/$boost=3,site=www.maff.go.jp
+$boost=2,site=www.nihs.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/$boost=3,site=www.mhlw.go.jp
 
 ! --- 日本酒・ワイン・飲料（専門メーカー・団体）---
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.nrib.go.jp
 $boost=2,site=www.japansake.or.jp
 $boost=2,site=www.brewing.or.jp
 $boost=2,site=www.asahigroup-holdings.com
@@ -5071,19 +5071,19 @@ $boost=2,site=www.kiku-masamune.co.jp
 $boost=2,site=www.nigorikake.com
 
 ! --- 給食・学校食育 ---
-\$boost=1.*site=.*.go.jp
-/j/syokuiku/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/a_menu/sports/syokuiku/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.maff.go.jp
+/j/syokuiku/$boost=3,site=www.maff.go.jp
+$boost=3,site=www.mext.go.jp
+/a_menu/sports/syokuiku/$boost=3,site=www.mext.go.jp
 $boost=2,site=www.gakkyu.or.jp
 $boost=2,site=www.dietitian.or.jp
 /school/$boost=2,site=www.dietitian.or.jp
 
 ! --- 食品ロス・フードバンク ---
-\$boost=1.*site=.*.go.jp
-/policies/policy/consumer_policy/information/food_loss/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/j/shokusan/recycle/syoku_loss/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.caa.go.jp
+/policies/policy/consumer_policy/information/food_loss/$boost=3,site=www.caa.go.jp
+$boost=3,site=www.maff.go.jp
+/j/shokusan/recycle/syoku_loss/$boost=3,site=www.maff.go.jp
 $boost=2,site=www.secondharvest.jp
 
 ! --- コンビニ・スーパー（商品情報）---
@@ -5182,19 +5182,19 @@ $boost=2,site=blog.bebit.co.jp
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ! --- 保育・幼稚園 ---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.cfa.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/$boost=3,site=www.mhlw.go.jp
 $boost=2,site=www.pref.tokyo.lg.jp
 /soshiki/kodomo/jyoho.html/$boost=2,site=www.pref.tokyo.lg.jp
-\$boost=1.*site=.*.go.jp
-/a_menu/shotou/youchien/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mext.go.jp
+/a_menu/shotou/youchien/$boost=3,site=www.mext.go.jp
 
 ! --- 小中高の学習（公式教材・学校）---
 $boost=3,site=www.nhk.or.jp
 /school/$boost=3,site=www.nhk.or.jp
-\$boost=1.*site=.*.go.jp
-/a_menu/shotou/kyoikukatei/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mext.go.jp
+/a_menu/shotou/kyoikukatei/$boost=3,site=www.mext.go.jp
 $boost=2,site=www.kyoiku-shuppan.co.jp
 $boost=2,site=www.tokyo-shoseki.co.jp
 $boost=2,site=www.taishukan.co.jp
@@ -5204,21 +5204,21 @@ $boost=2,site=hon.gakken.co.jp
 $boost=2,site=www.gakken.co.jp
 
 ! --- 不登校・発達障害支援 ---
-\$boost=1.*site=.*.go.jp
-/a_menu/shotou/seitoshidou/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mext.go.jp
+/a_menu/shotou/seitoshidou/$boost=3,site=www.mext.go.jp
+$boost=3,site=www.ncnp.go.jp
+$boost=2,site=www.rehab.go.jp
+$boost=2,site=www.nrcd.go.jp
+$boost=2,site=www.ncchd.go.jp
 $boost=2,site=www.jspn.or.jp
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/hattatsu/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/hattatsu/$boost=3,site=www.mhlw.go.jp
 
 ! --- 奨学金・高等教育支援 ---
 $boost=3,site=www.jasso.or.jp
 /scholarship/$boost=3,site=www.jasso.or.jp
-\$boost=1.*site=.*.go.jp
-/a_menu/koutou/shougakukin/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mext.go.jp
+/a_menu/koutou/shougakukin/$boost=3,site=www.mext.go.jp
 $boost=2,site=www.zenginkyo.or.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -5257,13 +5257,13 @@ $boost=2,site=yondemi.jp
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ! --- 公的支援機関 ---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/policy/newbusiness/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.chusho.meti.go.jp
+$boost=3,site=www.j-net21.smrj.go.jp
+$boost=3,site=www.smrj.go.jp
+$boost=2,site=www.sbir.go.jp
+$boost=3,site=www.meti.go.jp
+/policy/newbusiness/$boost=3,site=www.meti.go.jp
+$boost=2,site=startup.go.jp
 $boost=2,site=www.startup-db.com
 
 ! --- 経営・マーケティング（学術・専門）---
@@ -5272,7 +5272,7 @@ $boost=2,site=www.economist.com
 $boost=2,site=hbr.org
 
 ! --- 会計・財務 ---
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.nta.go.jp
 $boost=2,site=www.jicpa.or.jp
 $boost=2,site=www.nichizeiren.or.jp
 $boost=2,site=www.kaikeishi.or.jp
@@ -5281,18 +5281,18 @@ $boost=2,site=www.kaikeishi.or.jp
 !! 大規模追加セクション18: 環境・サステナビリティ詳細
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.env.go.jp
+$boost=3,site=www.jma.go.jp
+$boost=3,site=www.nies.go.jp
 $boost=2,site=www.renewable-ei.org
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.enecho.meti.go.jp
 $boost=2,site=www.greenpeace.org
 /japan/$boost=2,site=www.greenpeace.org
 $boost=2,site=www.wwf.or.jp
 $boost=2,site=www.iucnjapan.org
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.erca.go.jp
 $boost=2,site=www.kikonet.org
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.nedo.go.jp
 $boost=2,site=www.nsca.or.jp
 $boost=2,site=www.gec.jp
 
@@ -5311,9 +5311,9 @@ $boost=2,site=www.imf.org
 $boost=2,site=www.worldbank.org
 $boost=2,site=www.oecd.org
 $boost=2,site=www.wto.org
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/mofaj/\$boost=1.*site=.*.go.jp
+$boost=2,site=www.jetro.go.jp
+$boost=2,site=www.mofa.go.jp
+/mofaj/$boost=3,site=www.mofa.go.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! 大規模追加セクション20: Q&A・知識共有（信頼できるもの）
@@ -5363,16 +5363,16 @@ $boost=2,site=www.waterworks.metro.tokyo.lg.jp
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ! --- フィットネス・運動 ---
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.jpnsport.go.jp
 $boost=3,site=www.joc.or.jp
 $boost=2,site=www.japan-sports.or.jp
 $boost=2,site=www.jasa.or.jp
 $boost=2,site=www.nbtf.or.jp
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/undou/index.html/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/undou/index.html/$boost=3,site=www.mhlw.go.jp
 ! スポーツ庁
-\$boost=1.*site=.*.go.jp
-/sports/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mext.go.jp
+/sports/$boost=3,site=www.mext.go.jp
 $boost=2,site=www.japan-sports.or.jp
 ! ザバスなどプロテイン（メーカー公式）
 $boost=2,site=www.meiji.co.jp
@@ -5381,8 +5381,8 @@ $boost=2,site=www.otsuka.co.jp
 /soykana/$boost=2,site=www.otsuka.co.jp
 
 ! --- ダイエット・栄養（公的・専門家のみ）---
-\$boost=1.*site=.*.go.jp
-/information/food.html/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.e-healthnet.mhlw.go.jp
+/information/food.html/$boost=3,site=www.e-healthnet.mhlw.go.jp
 $boost=3,site=www.dietitian.or.jp
 $boost=2,site=www.jasso.or.jp
 $boost=2,site=www.jclhns.org
@@ -5455,15 +5455,15 @@ $boost=2,site=www.jds.or.jp
 !! 大規模追加セクション24: デジタル政府・DX関連
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/denshijiti/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/dx/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/policy/it_policy/dx/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.digital.go.jp
+$boost=3,site=mynumber.soumu.go.jp
+$boost=3,site=www.soumu.go.jp
+/denshijiti/$boost=3,site=www.soumu.go.jp
+$boost=2,site=www.ipa.go.jp
+/dx/$boost=3,site=www.ipa.go.jp
+$boost=3,site=www.meti.go.jp
+/policy/it_policy/dx/$boost=3,site=www.meti.go.jp
+$boost=2,site=design.digital.go.jp
 $boost=2,site=www.jdcc.or.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -5607,8 +5607,8 @@ $boost=2,site=www.nikkei.com
 /markets/$boost=3,site=www.nikkei.com
 $boost=2,site=www.jpx.co.jp
 $boost=2,site=www.boj.or.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.stat.go.jp
+$boost=2,site=www.e-stat.go.jp
 $boost=2,site=www.tdb.co.jp
 $boost=2,site=www.teikoku.com
 $boost=2,site=www.smtri.jp
@@ -5671,38 +5671,38 @@ $boost=2,site=www.kawasaki.co.jp
 /ja/$boost=2,site=www.kawasaki.co.jp
 
 ! --- 道路・交通法規 ---
-\$boost=1.*site=.*.go.jp
-/bureau/traffic/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.npa.go.jp
+/bureau/traffic/$boost=3,site=www.npa.go.jp
 $boost=3,site=www.jaf.or.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mlit.go.jp
+$boost=2,site=www.nilim.go.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! 大規模追加セクション30: 福祉・介護・高齢者
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/hukushi_kaigo/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/hukushi_kaigo/$boost=3,site=www.mhlw.go.jp
+$boost=3,site=www.wam.go.jp
+$boost=3,site=www.kaigokensaku.mhlw.go.jp
 $boost=2,site=www.kaigodoor.jp
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/$boost=3,site=www.mhlw.go.jp
 $boost=2,site=www.jahcm.org
 $boost=2,site=www.zenroren.gr.jp
 $boost=2,site=www.iog.co.jp
 $boost=2,site=www.jpngeriat-soc.or.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.nrcd.go.jp
+$boost=2,site=www.rehab.go.jp
 $boost=2,site=www.jlta.or.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! 大規模追加セクション31: 植物・農業・自然（個人ブログ含む）
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.maff.go.jp
+$boost=3,site=www.naro.go.jp
+$boost=2,site=www.affrc.maff.go.jp
 $boost=2,site=www.sc-engei.co.jp
 /navi/$boost=3,site=www.sc-engei.co.jp
 $boost=2,site=www.suntory.co.jp
@@ -5731,7 +5731,7 @@ $boost=2,site=www.jfe-technos.co.jp
 $boost=2,site=www.abmc.jp
 
 ! --- 人文・社会科学系学会 ---
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.jstage.jst.go.jp
 $boost=2,site=ci.nii.ac.jp
 $boost=2,site=www.jss.ac.jp
 $boost=2,site=www.jss.gr.jp
@@ -5750,22 +5750,22 @@ $boost=2,site=www.jsrm.or.jp
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ! 確定申告関連
-\$boost=1.*site=.*.go.jp
-/taxes/shiraberu/taxanswer/shotoku/shoto300.htm/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/taxes/tetsuzuki/shinsei/shinkoku/shotoku/tokushu/index.htm/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.nta.go.jp
+/taxes/shiraberu/taxanswer/shotoku/shoto300.htm/$boost=3,site=www.nta.go.jp
+$boost=3,site=www.nta.go.jp
+/taxes/tetsuzuki/shinsei/shinkoku/shotoku/tokushu/index.htm/$boost=3,site=www.nta.go.jp
 ! 消費税
-\$boost=1.*site=.*.go.jp
-/taxes/shiraberu/taxanswer/shohi/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.nta.go.jp
+/taxes/shiraberu/taxanswer/shohi/$boost=3,site=www.nta.go.jp
 ! 相続税・贈与税
-\$boost=1.*site=.*.go.jp
-/taxes/shiraberu/taxanswer/sozoku/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.nta.go.jp
+/taxes/shiraberu/taxanswer/sozoku/$boost=3,site=www.nta.go.jp
 ! 住民税
-\$boost=1.*site=.*.go.jp
-/main_sosiki/jichi_zeisei/czaisei/czaisei_seido/ichiran03.html/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.soumu.go.jp
+/main_sosiki/jichi_zeisei/czaisei/czaisei_seido/ichiran03.html/$boost=3,site=www.soumu.go.jp
 ! 社会保険
-\$boost=1.*site=.*.go.jp
-/service/kounen/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.nenkin.go.jp
+/service/kounen/$boost=3,site=www.nenkin.go.jp
 $boost=3,site=www.kyoukaikenpo.or.jp
 /g3/$boost=3,site=www.kyoukaikenpo.or.jp
 
@@ -5814,9 +5814,9 @@ $boost=2,site=obsidian.md
 $boost=2,site=scrapbox.io
 
 ! --- 睡眠・疲労回復（公的・専門家のみ）---
-\$boost=1.*site=.*.go.jp
-/information/heart/k-01-001.html/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.e-healthnet.mhlw.go.jp
+/information/heart/k-01-001.html/$boost=3,site=www.e-healthnet.mhlw.go.jp
+$boost=2,site=www.ncnp.go.jp
 $boost=2,site=www.jssr.gr.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -5824,20 +5824,20 @@ $boost=2,site=www.jssr.gr.jp
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ! --- 人権・多様性（公的機関）---
-\$boost=1.*site=.*.go.jp
-/JINKEN/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.moj.go.jp
+/JINKEN/$boost=3,site=www.moj.go.jp
+$boost=3,site=www.gender.go.jp
 $boost=2,site=www.hurights.or.jp
 $boost=2,site=www.jinken.ne.jp
 $boost=2,site=www.amnesty.or.jp
 $boost=2,site=www.hrn.or.jp
 
 ! --- 外国人支援・多文化共生 ---
-\$boost=1.*site=.*.go.jp
-/isa/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=2,site=www.moj.go.jp
+/isa/$boost=3,site=www.moj.go.jp
+$boost=3,site=www.soumu.go.jp
 
-/main_sosiki/kenkyu/tabunka/\$boost=1.*site=.*.go.jp
+/main_sosiki/kenkyu/tabunka/$boost=3,site=www.soumu.go.jp
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -5845,8 +5845,8 @@ $boost=2,site=www.hrn.or.jp
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 $boost=3,site=www.nichiju.or.jp
-\$boost=1.*site=.*.go.jp
-/nature/dobutsu/aigo/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.env.go.jp
+/nature/dobutsu/aigo/$boost=3,site=www.env.go.jp
 $boost=2,site=www.anicom-sompo.co.jp
 /contents/$boost=2,site=www.anicom-sompo.co.jp
 $boost=2,site=www.ipetinsurance.co.jp
@@ -5861,15 +5861,15 @@ $boost=2,site=www.nipponpet.co.jp
 !! 大規模追加セクション38: 防災・気象・自然災害
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/jma/\$boost=1.*site=.*.go.jp
-/bosai/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.bousai.go.jp
+$boost=3,site=www.fdma.go.jp
+$boost=3,site=www.jma.go.jp
+/jma/$boost=3,site=www.jma.go.jp
+/bosai/$boost=3,site=www.jma.go.jp
+$boost=3,site=www.npa.go.jp
 $boost=2,site=www.tfd.metro.tokyo.lg.jp
-\$boost=1.*site=.*.go.jp
-/road/road/r_bosai/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mlit.go.jp
+/road/road/r_bosai/$boost=3,site=www.mlit.go.jp
 $boost=2,site=www.pref.tokyo.lg.jp
 /bousai/$boost=3,site=www.pref.tokyo.lg.jp
 $boost=2,site=www.city.osaka.lg.jp
@@ -5877,8 +5877,8 @@ $boost=2,site=www.city.osaka.lg.jp
 $boost=2,site=www.nhk.or.jp
 /bousai/$boost=3,site=www.nhk.or.jp
 $boost=2,site=disasterinfo.nhk.or.jp
-\$boost=1.*site=.*.go.jp
-/jmasc/jmasc.html/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.jma.go.jp
+/jmasc/jmasc.html/$boost=3,site=www.jma.go.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! 大規模追加セクション39: 占い・精神世界（除外強化）
@@ -6076,7 +6076,7 @@ $boost=2,site=www.meijiyasuda.co.jp
 /profile/enjoy/$boost=2,site=www.meijiyasuda.co.jp
 
 ! --- IT系資格・認定 ---
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.jitec.ipa.go.jp
 $boost=2,site=aws.amazon.com
 /jp/certification/$boost=3,site=aws.amazon.com
 $boost=2,site=cloud.google.com
@@ -6085,10 +6085,10 @@ $boost=2,site=learn.microsoft.com
 /ja-jp/certifications/$boost=2,site=learn.microsoft.com
 
 ! --- 各種テスト・測定ツール（公的）---
-\$boost=1.*site=.*.go.jp
-/files/000073209.pdf/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/sg-crd/gaiyou.html/\$boost=1.*site=.*.go.jp
+$boost=2,site=www.ipa.go.jp
+/files/000073209.pdf/$boost=2,site=www.ipa.go.jp
+$boost=2,site=www.jitec.ipa.go.jp
+/sg-crd/gaiyou.html/$boost=2,site=www.jitec.ipa.go.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! 大規模追加セクション43: ハードウェア自作・電子工作
@@ -6134,13 +6134,13 @@ $boost=3,site=keijiro.hatenablog.com
 !! 大規模追加セクション45: 科学コミュニケーション・啓発
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/news/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/seika/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=scienceportal.jst.go.jp
+$boost=3,site=blog.miraikan.jst.go.jp
+$boost=3,site=www.jst.go.jp
+/news/$boost=3,site=www.jst.go.jp
+$boost=2,site=www.jst.go.jp
+/seika/$boost=3,site=www.jst.go.jp
+$boost=2,site=www.nistep.go.jp
 $boost=3,site=www.nikkei-science.com
 $boost=3,site=natgeo.nikkeibp.co.jp
 $boost=2,site=www.yodosha.co.jp
@@ -6191,7 +6191,7 @@ $boost=2,site=csd.ninjal.ac.jp
 !! 大規模追加セクション48: 建築・都市計画・土木
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mlit.go.jp
 $boost=2,site=www.jia.or.jp
 $boost=2,site=www.aij.or.jp
 $boost=2,site=www.jsce.or.jp
@@ -6248,19 +6248,19 @@ $boost=2,site=bagelee.com
 /n/*/$boost=1,site=note.com
 
 ! 政府・公的機関の告示・通知
-/stf/houdou/\$boost=1.*site=.*.go.jp
-/notice/\$boost=1.*site=.*.go.jp
-/news_press/\$boost=1.*site=.*.go.jp
+/stf/houdou/$boost=3,site=www.mhlw.go.jp
+/notice/$boost=2,site=www.ipa.go.jp
+/news_press/$boost=3,site=www.meti.go.jp
 
 ! 報告書・白書
-/hakusho/\$boost=1.*site=.*.go.jp
-/nenjihoukoku/\$boost=1.*site=.*.go.jp
-/hakusho/\$boost=1.*site=.*.go.jp
-/hakusho/\$boost=1.*site=.*.go.jp
+/hakusho/$boost=3,site=www.cao.go.jp
+/nenjihoukoku/$boost=3,site=www.mhlw.go.jp
+/hakusho/$boost=3,site=www.mext.go.jp
+/hakusho/$boost=3,site=www.npa.go.jp
 
 ! 研究論文・プレスリリース
 /press/$boost=2,site=www.riken.jp
-/press_release/\$boost=1.*site=.*.go.jp
+/press_release/$boost=2,site=www.aist.go.jp
 /topics/$boost=2,site=www.jaxa.jp
 /news/$boost=2,site=www.nao.ac.jp
 
@@ -6531,34 +6531,34 @@ $boost=2,site=techblog.otona.co.jp
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ! 経産省DX・AI政策
-\$boost=1.*site=.*.go.jp
-/policy/it_policy/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/policy/mono_info_service/connected_industries/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.meti.go.jp
+/policy/it_policy/$boost=3,site=www.meti.go.jp
+$boost=3,site=www.meti.go.jp
+/policy/mono_info_service/connected_industries/$boost=3,site=www.meti.go.jp
 
 ! 総務省ICT政策
-\$boost=1.*site=.*.go.jp
-/main_sosiki/joho_tsusin/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.soumu.go.jp
+/main_sosiki/joho_tsusin/$boost=3,site=www.soumu.go.jp
 
 ! 文科省 研究・学術
-\$boost=1.*site=.*.go.jp
-/a_menu/kagaku/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mext.go.jp
+/a_menu/kagaku/$boost=3,site=www.mext.go.jp
 
 ! 国交省 住宅・都市
-\$boost=1.*site=.*.go.jp
-/jutakukentiku/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/toshi/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mlit.go.jp
+/jutakukentiku/$boost=3,site=www.mlit.go.jp
+$boost=3,site=www.mlit.go.jp
+/toshi/$boost=3,site=www.mlit.go.jp
 
 ! 農水省 食料・農業
-\$boost=1.*site=.*.go.jp
-/j/kanbo/tpc/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.maff.go.jp
+/j/kanbo/tpc/$boost=3,site=www.maff.go.jp
 
 ! 内閣府 各種白書
-\$boost=1.*site=.*.go.jp
-/hakusho/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/keizai3/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.cao.go.jp
+/hakusho/$boost=3,site=www.cao.go.jp
+$boost=3,site=www.cao.go.jp
+/keizai3/$boost=3,site=www.cao.go.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! 大規模追加セクション57: 地域情報・地方紙（さらに追加）
@@ -6620,13 +6620,13 @@ $boost=2,site=www.nursepress.com
 $boost=2,site=www.kango-roo.com
 
 ! --- 教員向け ---
-\$boost=1.*site=.*.go.jp
-/a_menu/shotou/kyoin/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mext.go.jp
+/a_menu/shotou/kyoin/$boost=3,site=www.mext.go.jp
 $boost=2,site=www.nichibun.co.jp
 
 ! --- 保育士向け ---
-\$boost=1.*site=.*.go.jp
-/stf/seisakunitsuite/bunya/kodomo/hoiku/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mhlw.go.jp
+/stf/seisakunitsuite/bunya/kodomo/hoiku/$boost=3,site=www.mhlw.go.jp
 $boost=2,site=www.hoyokyo.or.jp
 
 ! --- 薬剤師向け ---
@@ -6639,11 +6639,11 @@ $boost=2,site=uxmilk.jp
 $boost=2,site=wdg.hatenablog.com
 $boost=2,site=coliss.com
 $boost=2,site=bagelee.com
-\$boost=1.*site=.*.go.jp
+$boost=2,site=design.digital.go.jp
 $boost=2,site=smarthr.design
 
 ! --- 会計士・税理士向け ---
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.nta.go.jp
 $boost=3,site=www.nichizeiren.or.jp
 $boost=2,site=www.jicpa.or.jp
 
@@ -6651,26 +6651,26 @@ $boost=2,site=www.jicpa.or.jp
 $boost=2,site=www.jia.or.jp
 $boost=2,site=www.aij.or.jp
 $boost=2,site=www.jsce.or.jp
-\$boost=1.*site=.*.go.jp
-/totikensangyo/\$boost=1.*site=.*.go.jp
+$boost=3,site=www.mlit.go.jp
+/totikensangyo/$boost=3,site=www.mlit.go.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! 大規模追加セクション59: 気象・防災 詳細ページ
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-\$boost=1.*site=.*.go.jp
-/jma/kishou/\$boost=1.*site=.*.go.jp
-/jma/bosai/\$boost=1.*site=.*.go.jp
-/jmarc/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/taisaku/\$boost=1.*site=.*.go.jp
-/kyoiku/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-/mizukokudo/\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.jma.go.jp
+/jma/kishou/$boost=3,site=www.jma.go.jp
+/jma/bosai/$boost=3,site=www.jma.go.jp
+/jmarc/$boost=3,site=www.jma.go.jp
+$boost=3,site=www.bousai.go.jp
+/taisaku/$boost=3,site=www.bousai.go.jp
+/kyoiku/$boost=3,site=www.bousai.go.jp
+$boost=2,site=www.bosai.go.jp
+$boost=2,site=www.j-shis.bosai.go.jp
+$boost=3,site=www.mlit.go.jp
+/mizukokudo/$boost=3,site=www.mlit.go.jp
+$boost=2,site=www.river.go.jp
+$boost=2,site=www.xrain.bosai.go.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! 大規模追加セクション60: 最終まとめ・補完
@@ -6704,10 +6704,10 @@ $boost=2,site=onlinejudge.u-aizu.ac.jp
 $boost=2,site=www.spoj.com
 
 ! --- オープンデータ・統計 ---
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
-\$boost=1.*site=.*.go.jp
+$boost=3,site=www.e-stat.go.jp
+$boost=3,site=www.stat.go.jp
+$boost=2,site=data.go.jp
+$boost=2,site=www.resas.go.jp
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! 追加セクション61: 企業テックブログ 後半追加（pからz）
