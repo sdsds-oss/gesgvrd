@@ -390,7 +390,7 @@ $boost=3,site=www.mof.go.jp
 $boost=3,site=edinet.fsa.go.jp
 $boost=3,site=www.e-stat.go.jp
 $boost=3,site=www.stat.go.jp
-$boost=3,site=www.cao.go.jp/keizai3/
+/$boost=3,site=www.cao.go.jp
 
 ! --- 日本取引所グループ（JPX）---
 $boost=3,site=www.jpx.co.jp
@@ -812,7 +812,7 @@ $boost=3,site=blog.ojisan.io
 $boost=2,site=terrierscript.hatenablog.com
 
 ! 豊田陽介（フロントエンド）
-$boost=2,site=medium.com/@1000ch
+/@1000ch/$boost=2,site=medium.com
 
 ! r7kamura（全分野・著名エンジニア）
 $boost=3,site=r7kamura.com
@@ -4307,7 +4307,7 @@ $boost=2,site=www.meijiyasuda.co.jp
 $boost=3,site=www.reins.or.jp
 $boost=2,site=www.retpc.jp
 $boost=2,site=suumo.jp
-/article/oyakudachi/$/boost=2,site=suumo.jp
+/article/oyakudachi/$boost=2,site=suumo.jp
 $boost=2,site=www.homes.co.jp
 /magazine/$boost=2,site=www.homes.co.jp
 
@@ -5495,7 +5495,7 @@ $boost=2,site=hogewatch.hatenablog.com
 $boost=2,site=kasei.hatenablog.com
 $boost=2,site=yuguiyang.hatenablog.com
 $boost=2,site=nabeken.hatenablog.com
-$boost=2,site=medium.com/@r7kamura
+/@r7kamura/$boost=2,site=medium.com
 
 ! 科学・学術系
 $boost=2,site=ill-conditioned.hatenablog.com
