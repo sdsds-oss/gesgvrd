@@ -767,6 +767,8 @@ $boost=1,site=hatenadiary.com
 $boost=1,site=hatenablog.jp
 /entry/$boost=2,site=hatenablog.jp
 
+$boost=3, site=reddit.com
+
 ! note: AI量産・アフィ混入多数のため全体ブースト控えめ
 $boost=1,site=note.com
 /n/$boost=1,site=note.com
@@ -1164,6 +1166,10 @@ $boost=2,site=redis.io
 $boost=2,site=www.elastic.co
 $boost=2,site=grafana.com
 $boost=2,site=prometheus.io
+
+! --- OSS・言語・フレームワーク公式ブログ ---
+$boost=3,site=blog.mozilla.org
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!
@@ -1989,9 +1995,6 @@ $downrank=2,site=tsubaki-musicschool.com
 $downrank=2,site=vrpiano.co.jp
 $downrank=2,site=bee-music.jp
 $downrank=2,site=www.neo-career.co.jp
-
-! Wikipedia（一次情報ではない）
-$downrank=1,site=ja.wikipedia.org
 
 ! 企業採用ページ
 /recruit/$downrank=2
@@ -5497,7 +5500,6 @@ $boost=2,site=kasei.hatenablog.com
 $boost=2,site=yuguiyang.hatenablog.com
 $boost=2,site=nabeken.hatenablog.com
 /@r7kamura/$boost=2,site=medium.com
-
 ! 科学・学術系
 $boost=2,site=ill-conditioned.hatenablog.com
 $boost=2,site=sekaihaasobiba.hatenadiary.com
@@ -6708,7 +6710,6 @@ $boost=3,site=www.stat.go.jp
 $boost=2,site=data.go.jp
 $boost=2,site=www.resas.go.jp
 
-
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! 追加セクション61: 企業テックブログ 後半追加（pからz）
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -6998,6 +6999,13 @@ $boost=2,site=www.kottaso-recipe.com
 /topics/security/$boost=2,site=zenn.dev
 /topics/sql/$boost=2,site=zenn.dev
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! 追加セクション67: wiki
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+$boost=2,site=ja.wikipedia.org
+$boost=2,site=dic.pixiv.net
+$boost=2,site=dic.nicovideo.jp
 
 ! ===== END OF GOGGLE =====
 
