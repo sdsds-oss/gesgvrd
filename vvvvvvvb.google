@@ -1060,12 +1060,12 @@ $boost=2,site=gihyo.jp
 /book/$boost=2,site=gihyo.jp
 
 ! @IT（アットマーク・アイティ）
-$boost=2,site=atmarkit.itmedia.co.jp
+$boost=3,site=atmarkit.itmedia.co.jp
 
 ! ITmedia
-$boost=2,site=www.itmedia.co.jp
-/enterprise/$boost=2,site=www.itmedia.co.jp
-/news/$boost=2,site=www.itmedia.co.jp
+$boost=3,site=www.itmedia.co.jp
+/enterprise/$boost=3,site=www.itmedia.co.jp
+/news/$boost=3,site=www.itmedia.co.jp
 
 ! CodeZine（翔泳社）
 $boost=2,site=codezine.jp
@@ -1626,8 +1626,8 @@ $boost=2,site=www.astroarts.co.jp
 /news/$boost=3,site=www.astroarts.co.jp
 
 ! --- 技術・IT ---
-$boost=2,site=www.itmedia.co.jp
-/news/$boost=2,site=www.itmedia.co.jp
+$boost=3,site=www.itmedia.co.jp
+/news/$boost=3,site=www.itmedia.co.jp
 $boost=2,site=internet.watch.impress.co.jp
 $boost=2,site=japan.cnet.com
 $boost=2,site=japan.zdnet.com
@@ -3690,8 +3690,8 @@ $boost=2,site=gihyo.jp
 /developer/$boost=3,site=gihyo.jp
 $boost=2,site=codezine.jp
 /article/$boost=3,site=codezine.jp
-$boost=2,site=atmarkit.itmedia.co.jp
-$boost=2,site=www.itmedia.co.jp
+$boost=3,site=atmarkit.itmedia.co.jp
+$boost=3,site=www.itmedia.co.jp
 ! 翔泳社（SEshop）
 $boost=2,site=www.seshop.com
 ! マイナビ出版（IT書籍）
